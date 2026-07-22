@@ -1878,7 +1878,7 @@
         <text id="독정" class="station 인천2호선" transform="translate(118.2 423.6)" visibility="hidden">독정</text>
         <text id="검바위" class="station 인천2호선" transform="translate(118.2 480.9)" visibility="hidden">검바위</text>
         <text id="아시아드경기장" class="station 인천2호선" transform="translate(118.2 507.5)" visibility="hidden">아시아드경기장</text>
-        <text id="서구청" class="station 인천2호선" transform="translate(118.2 535.5)" visibility="hidden">서구청</text>
+        <text id="서해구청" class="station 인천2호선" transform="translate(118.2 535.5)" visibility="hidden">서해구청</text>
         <text id="가정" class="station 인천2호선" transform="translate(118.2 563.6)" visibility="hidden">가정</text>
         <text id="가정중앙시장" class="station 인천2호선" transform="translate(118.2 592.3)" visibility="hidden">가정중앙시장</text>
         <text id="갈산" class="station 인천1호선" transform="translate(186 578.5)" visibility="hidden">갈산</text>
