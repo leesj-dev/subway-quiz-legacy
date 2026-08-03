@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ── Pretendard (subset) ─────────────────────────────────────────────────── */
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url("/fonts/Pretendard-Regular.subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url("/fonts/Pretendard-Bold.subset.woff2") format("woff2");
+}
+
+/*
+  이 앱의 색 규칙: UI는 무채색, 채도는 노선 색에서만 나온다.
+  노선도가 이미 24가지 색을 쓰고 있어서 크롬까지 색을 쓰면 지도가 묻힌다.
+*/
+:root {
+  --radius: 0.75rem;
+
+  --background: oklch(0.983 0.002 255);
+  --foreground: oklch(0.205 0.012 262);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.205 0.012 262);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.205 0.012 262);
+  --primary: oklch(0.245 0.021 264);
+  --primary-foreground: oklch(0.985 0.001 255);
+  --secondary: oklch(0.955 0.004 258);
+  --secondary-foreground: oklch(0.245 0.021 264);
+  --muted: oklch(0.958 0.003 258);
+  --muted-foreground: oklch(0.548 0.016 260);
+  --accent: oklch(0.947 0.006 258);
+  --accent-foreground: oklch(0.245 0.021 264);
+  --destructive: oklch(0.581 0.216 27.4);
+  --destructive-foreground: oklch(0.985 0.001 255);
+  --success: oklch(0.596 0.132 158);
+  --warning: oklch(0.72 0.14 78);
+  --border: oklch(0.912 0.005 258);
+  --input: oklch(0.912 0.005 258);
+  --ring: oklch(0.62 0.03 260);
+
+  /* 노선도가 앉는 면. 지도 SVG가 밝은 배경 전제라 다크모드에서도 밝게 둔다. */
+  --paper: oklch(0.995 0.001 255);
+  --paper-border: oklch(0.9 0.005 258);
+}
+
+.dark {
+  --background: oklch(0.161 0.009 265);
+  --foreground: oklch(0.961 0.003 258);
+  --card: oklch(0.211 0.011 265);
+  --card-foreground: oklch(0.961 0.003 258);
+  --popover: oklch(0.229 0.012 265);
+  --popover-foreground: oklch(0.961 0.003 258);
+  --primary: oklch(0.945 0.003 258);
+  --primary-foreground: oklch(0.201 0.011 265);
+  --secondary: oklch(0.267 0.013 265);
+  --secondary-foreground: oklch(0.961 0.003 258);
+  --muted: oklch(0.263 0.012 265);
+  --muted-foreground: oklch(0.687 0.014 260);
+  --accent: oklch(0.291 0.014 265);
+  --accent-foreground: oklch(0.961 0.003 258);
+  --destructive: oklch(0.653 0.201 25.5);
+  --destructive-foreground: oklch(0.985 0.001 255);
+  --success: oklch(0.7 0.14 158);
+  --warning: oklch(0.79 0.14 78);
+  --border: oklch(1 0 0 / 11%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.55 0.02 260);
+
+  --paper: oklch(0.975 0.002 255);
+  --paper-border: oklch(1 0 0 / 14%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-paper: var(--paper);
+  --color-paper-border: var(--paper-border);
+
+  --font-sans: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", ui-sans-serif, system-ui,
+    sans-serif;
+  --font-mono: var(--font-mono-digits), ui-monospace, SFMono-Regular, monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss05";
+    letter-spacing: -0.011em;
+    word-break: keep-all;
+    /* iOS Safari 주소창 높이 변화까지 흡수 */
+    min-height: 100svh;
+    overscroll-behavior-y: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  /* 숫자는 자리가 흔들리면 읽기 나쁘다. 시계·점수·역 개수 전부 고정폭. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: 999px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* ── Motion ──────────────────────────────────────────────────────────────── */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-rise-in {
+  animation: rise-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-pop-in {
+  animation: pop-in 0.22s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" contentscripttype="application/ecmascript" contentstyletype="text/css" enable-background="new 0 0 4081.89 3318.74" height="2718.74px" preserveAspectRatio="xMidYMid meet" version="1.1" viewBox="500.00 350.00 3081.89 2718.74" width="3081.89px" x="0px" xml:space="preserve" y="0px" zoomAndPan="magnify" style="font-family: Pretendard, &quot;Apple SD Gothic Neo&quot;, &quot;Malgun Gothic&quot;, sans-serif;">
+    <defs><style>
+      @font-face { font-family: Pretendard; src: url('../fonts/Pretendard-Regular.subset.woff2'); font-weight: 400; font-style: normal; }
+      @font-face { font-family: Pretendard; src: url('../fonts/Pretendard-Bold.subset.woff2'); font-weight: 700; font-style: normal; }
+      .station { font-weight: 700; }
+    </style></defs>
+
+    <g id="bg_color" shape-rendering="geometricPrecision">
+        <rect fill="#FFFFFF" height="3318.74" width="4081.89" x="1.1" y="1.099" />
+    </g>
+    <g id="라인_동해선" shape-rendering="geometricPrecision" class="line 동해선">
+        <path d="   M3142.69,479.9l0.024,348.821v88.44v88.311v88.351v75.673c0,14.948-1.851,29.464-5.337,43.331   c-3.052,12.143-7.358,23.787-12.772,34.789c-10.854,22.056-26.16,41.527-44.745,57.239c-27.775,23.48-62.875,38.566-101.385,41.342   c-4.269,0.308-83.832,0.489-83.832,0.489l-87.389-0.011l-150.186-0.018l-150.314-0.018l-149.75-0.018l-150.125-0.018l-161.829-0.02   c-39.139,0-70.867,31.728-69.97,69.782l0.016,51.981l0.051,160.127l0.035,161.707" fill="none" id="전체라인_동해선" stroke="#A3C3E2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
+        <g id="역_동해선" shape-rendering="geometricPrecision">
+            <circle cx="1975.192" cy="1790.548" fill="#80A8D8" id="역_부전_동해선" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1975.131" cy="1628.389" fill="#80A8D8" id="역_거제해맞이" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2206.597" cy="1346.504" fill="#80A8D8" id="역_동래_동해선" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2356.777" cy="1346.504" fill="#80A8D8" id="역_안락" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2506.958" cy="1346.504" fill="#80A8D8" id="역_부산원동" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2657.138" cy="1346.504" fill="#80A8D8" id="역_재송" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2807.318" cy="1346.504" fill="#80A8D8" id="역_센텀" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3094.489" cy="1289.77" fill="#80A8D8" id="역_신해운대" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3131.832" cy="1230.794" fill="#80A8D8" id="역_송정" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.714" cy="1163.073" fill="#80A8D8" id="역_오시리아" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="1.3333" class="mark" />
+            <circle cx="3142.714" cy="1095.312" fill="#80A8D8" id="역_기장" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.714" cy="1027.549" fill="#80A8D8" id="역_일광" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.714" cy="959.787" fill="#80A8D8" id="역_좌천_동해선" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.714" cy="892.024" fill="#80A8D8" id="역_월내" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.69" cy="824.264" fill="#80A8D8" id="역_서생" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.69" cy="756.501" fill="#80A8D8" id="역_남창" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.69" cy="688.739" fill="#80A8D8" id="역_망양" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.69" cy="620.977" fill="#80A8D8" id="역_덕하" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.69" cy="553.215" fill="#80A8D8" id="역_개운포" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3142.69" cy="479.9" fill="#80A8D8" id="역_태화강" r="4" stroke="#80A8D8" stroke-miterlimit="10" stroke-width="2" class="mark" />
+        </g>
+        <g id="데코레이션_동해선" shape-rendering="geometricPrecision">
+            <g id="데코레이션_31_2_" shape-rendering="geometricPrecision">
+                <path d="M3164.176,424.234c9.167,0,16.625,7.458,16.625,16.625s-7.458,16.625-16.625,16.625h-42.971     c-9.167,0-16.625-7.458-16.625-16.625s7.458-16.625,16.625-16.625H3164.176 M3164.176,421.859h-42.971c-10.493,0-19,8.507-19,19     s8.506,19,19,19h42.971c10.493,0,19-8.507,19-19S3174.669,421.859,3164.176,421.859L3164.176,421.859z" fill="#A3C3E2" />
+                <g shape-rendering="geometricPrecision">
+                    <path d="M3134.81,438.665v1.795h7.893v2.352h-18.979v-2.352h7.981v-1.795h-5.498v-7.183h14.035v2.416h-10.93      v2.415h11.085v2.352H3134.81z M3140.53,447.493c0,0.585-0.167,1.115-0.499,1.593c-0.332,0.478-0.813,0.887-1.44,1.229      c-0.629,0.342-1.394,0.608-2.295,0.801c-0.902,0.192-1.922,0.289-3.06,0.289c-1.153,0-2.183-0.097-3.093-0.289      c-0.909-0.192-1.677-0.459-2.306-0.801c-0.629-0.343-1.108-0.752-1.441-1.229c-0.333-0.478-0.499-1.008-0.499-1.593      c0-1.211,0.639-2.166,1.917-2.864c1.279-0.697,3.071-1.047,5.378-1.047c1.152,0,2.18,0.093,3.081,0.277      c0.902,0.186,1.67,0.446,2.306,0.78c0.635,0.335,1.12,0.745,1.452,1.229C3140.364,446.353,3140.53,446.894,3140.53,447.493z       M3137.338,447.536c0-0.47-0.377-0.848-1.131-1.133s-1.759-0.428-3.015-0.428c-1.241,0-2.236,0.143-2.983,0.428      c-0.746,0.285-1.12,0.663-1.12,1.133c0,0.214,0.101,0.409,0.3,0.588c0.199,0.178,0.476,0.335,0.831,0.471      c0.354,0.135,0.784,0.242,1.286,0.32s1.065,0.117,1.686,0.117s1.186-0.039,1.696-0.117s0.946-0.186,1.309-0.32      c0.361-0.136,0.643-0.293,0.842-0.471C3137.237,447.945,3137.338,447.749,3137.338,447.536z" fill="#A3C3E2" />
+                    <path d="M3142.925,436.079h10.087v2.352h-10.087V436.079z M3152.68,443.175c0,0.599-0.111,1.151-0.332,1.656      c-0.223,0.506-0.54,0.944-0.954,1.314c-0.414,0.371-0.905,0.663-1.474,0.877s-1.201,0.32-1.896,0.32      c-0.709,0-1.352-0.106-1.928-0.32c-0.577-0.214-1.068-0.506-1.475-0.877c-0.406-0.37-0.72-0.812-0.942-1.325      c-0.221-0.513-0.333-1.062-0.333-1.646c0-0.599,0.115-1.15,0.344-1.656c0.228-0.506,0.546-0.944,0.953-1.314      c0.406-0.371,0.898-0.659,1.474-0.866c0.577-0.206,1.212-0.31,1.907-0.31s1.326,0.106,1.896,0.32s1.06,0.506,1.474,0.876      c0.414,0.371,0.731,0.81,0.954,1.315C3152.569,442.046,3152.68,442.591,3152.68,443.175z M3145.297,432.659h5.631v2.352h-5.631      V432.659z M3149.931,443.175c0-0.541-0.181-0.997-0.544-1.368c-0.362-0.37-0.816-0.556-1.363-0.556      c-0.266,0-0.518,0.05-0.754,0.149c-0.236,0.101-0.443,0.235-0.621,0.406c-0.177,0.171-0.318,0.374-0.422,0.609      c-0.103,0.235-0.154,0.488-0.154,0.759c0,0.57,0.188,1.037,0.565,1.4s0.839,0.545,1.386,0.545s1.001-0.188,1.363-0.566      C3149.75,444.176,3149.931,443.717,3149.931,443.175z M3157.957,451.362v-9.64h-1.419v8.742h-2.837v-19.045h2.837v7.887h1.419      v-8.208h2.971v20.264H3157.957z" fill="#A3C3E2" />
+                </g>
+            </g>
+            <g id="데코레이션_31_3_" shape-rendering="geometricPrecision" transform="matrix(1 0 0 1 -15.0000 0.0000)">
+                <path d="M1880.917,1774.736c9.167,0,16.625,7.458,16.625,16.625s-7.458,16.625-16.625,16.625h-42.971     c-9.167,0-16.625-7.458-16.625-16.625s7.458-16.625,16.625-16.625H1880.917 M1880.917,1772.361h-42.971c-10.493,0-19,8.507-19,19     s8.506,19,19,19h42.971c10.493,0,19-8.507,19-19S1891.411,1772.361,1880.917,1772.361L1880.917,1772.361z" fill="#A3C3E2" />
+                <g shape-rendering="geometricPrecision">
+                    <path d="M1851.552,1789.167v1.795h7.893v2.352h-18.979v-2.352h7.981v-1.795h-5.498v-7.183h14.035v2.416h-10.93      v2.415h11.085v2.352H1851.552z M1857.272,1797.994c0,0.585-0.167,1.115-0.499,1.593s-0.813,0.887-1.441,1.229      c-0.629,0.342-1.394,0.608-2.295,0.801s-1.922,0.289-3.06,0.289c-1.153,0-2.183-0.097-3.093-0.289s-1.678-0.459-2.306-0.801      c-0.629-0.343-1.108-0.752-1.441-1.229c-0.333-0.478-0.499-1.008-0.499-1.593c0-1.211,0.639-2.166,1.917-2.864      c1.278-0.697,3.071-1.047,5.378-1.047c1.152,0,2.18,0.093,3.081,0.277c0.901,0.186,1.67,0.446,2.306,0.78      c0.635,0.335,1.12,0.745,1.452,1.229S1857.272,1797.396,1857.272,1797.994z M1854.08,1798.037c0-0.47-0.377-0.848-1.131-1.133      c-0.754-0.285-1.759-0.428-3.015-0.428c-1.241,0-2.236,0.143-2.983,0.428c-0.746,0.285-1.12,0.663-1.12,1.133      c0,0.214,0.101,0.409,0.3,0.588c0.199,0.178,0.476,0.335,0.831,0.471c0.354,0.135,0.784,0.242,1.286,0.32      c0.502,0.078,1.065,0.117,1.686,0.117c0.621,0,1.186-0.039,1.696-0.117s0.946-0.186,1.309-0.32      c0.361-0.136,0.643-0.293,0.842-0.471C1853.979,1798.446,1854.08,1798.251,1854.08,1798.037z" fill="#A3C3E2" />
+                    <path d="M1859.667,1786.58h10.088v2.352h-10.088V1786.58z M1869.422,1793.677c0,0.599-0.111,1.151-0.332,1.656      c-0.223,0.506-0.54,0.944-0.954,1.314c-0.414,0.371-0.905,0.663-1.474,0.877c-0.569,0.214-1.201,0.32-1.896,0.32      c-0.709,0-1.352-0.106-1.928-0.32c-0.577-0.214-1.068-0.506-1.475-0.877c-0.406-0.37-0.72-0.812-0.942-1.325      c-0.221-0.513-0.333-1.062-0.333-1.646c0-0.599,0.115-1.15,0.344-1.656c0.228-0.506,0.546-0.944,0.953-1.314      c0.406-0.371,0.898-0.659,1.474-0.866c0.577-0.206,1.212-0.31,1.907-0.31s1.327,0.106,1.896,0.32      c0.569,0.214,1.06,0.506,1.474,0.876c0.414,0.371,0.731,0.81,0.954,1.315      C1869.311,1792.548,1869.422,1793.093,1869.422,1793.677z M1862.039,1783.16h5.631v2.352h-5.631V1783.16z M1866.673,1793.677      c0-0.541-0.181-0.997-0.544-1.368c-0.362-0.37-0.816-0.556-1.363-0.556c-0.266,0-0.518,0.05-0.754,0.149      c-0.236,0.101-0.443,0.235-0.621,0.406c-0.177,0.171-0.318,0.374-0.422,0.609c-0.103,0.235-0.154,0.488-0.154,0.759      c0,0.57,0.188,1.037,0.565,1.4s0.839,0.545,1.386,0.545c0.547,0,1.001-0.188,1.363-0.566      C1866.492,1794.678,1866.673,1794.219,1866.673,1793.677z M1874.699,1801.863v-9.64h-1.419v8.742h-2.838v-19.045h2.838v7.887      h1.419v-8.208h2.971v20.264H1874.699z" fill="#A3C3E2" />
+                </g>
+            </g>
+        </g>
+    </g>
+    <g id="라인_부산김해경전철" shape-rendering="geometricPrecision" class="line 부산김해경전철">
+        <path d="   M1300.673,1735.936c0,61.333-31.167,115.387-78.527,147.189c-28.194,18.931-62.126,29.977-98.639,29.977   c-16.14,0-31.776-2.158-46.636-6.202c-45.791-12.462-84.203-42.828-107.251-83.115c-14.813-25.892-23.279-55.881-23.279-87.848   l0.005-28.139v-16.782v-132v-129.052v-12.594c0-30.039-7.476-58.332-20.669-83.12c-12.782-24.016-30.931-44.742-52.847-60.578   c-22.41-16.192-48.758-27.271-77.334-31.527c-8.586-1.279-15.612-1.569-26.589-2.13c-19.773-1.439-38.531-3.053-56.294-9.034   c-27.134-9.136-51.329-24.663-70.796-44.792c-17.191-17.775-30.694-39.139-39.278-62.858c-6.811-18.82-10.524-39.122-10.524-60.292   v-6.857v-21.732v-44.435v-66.833v-67.166v-66.667v-67v-66.5v-66.587" fill="none" id="전체라인_부산김해경전철" stroke="#80499C" stroke-linecap="round" stroke-miterlimit="10" stroke-width="14" />
+        <g id="역_부산김해경전철" shape-rendering="geometricPrecision">
+            <circle cx="592.016" cy="589.262" fill="#FFFFFF" id="역_가야대" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="592" cy="655.862" fill="#FFFFFF" id="역_장신대" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="592.016" cy="722.349" fill="#FFFFFF" id="역_연지공원" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="591.992" cy="789.349" fill="#FFFFFF" id="역_박물관" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="592.016" cy="856.015" fill="#FFFFFF" id="역_수로왕릉" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="591.992" cy="923.182" fill="#FFFFFF" id="역_봉황" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="591.992" cy="990.015" fill="#FFFFFF" id="역_부원" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="592.016" cy="1056.182" fill="#FFFFFF" id="역_김해시청" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="602.54" cy="1123.331" fill="#FFFFFF" id="역_인제대" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="641.818" cy="1186.189" fill="#FFFFFF" id="역_김해대학" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="712.614" cy="1230.981" fill="#FFFFFF" id="역_지내" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="795.497" cy="1242.145" fill="#FFFFFF" id="역_불암" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="872.831" cy="1273.672" fill="#FFFFFF" id="역_대사" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="925.678" cy="1334.25" fill="#FFFFFF" id="역_평강" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="946.347" cy="1559.015" fill="#FFFFFF" id="역_등구" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="946.342" cy="1691.016" fill="#FFFFFF" id="역_덕두" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="969.621" cy="1823.784" fill="#FFFFFF" id="역_공항" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1076.872" cy="1906.958" fill="#FFFFFF" id="역_서부산유통지구" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1222.236" cy="1883.125" fill="#FFFFFF" id="역_괘법르네시떼" r="6" stroke="#80499C" stroke-miterlimit="10" stroke-width="2" class="mark" />
+        </g>
+        <g id="데코레이션_부산김해경전철" shape-rendering="geometricPrecision">
+            <g shape-rendering="geometricPrecision">
+                <path d="M674.137,544.897c0,10.493-8.507,19-19,19h-49.177c-10.493,0-19-8.507-19-19l0,0c0-10.493,8.507-19,19-19     h49.177C665.631,525.897,674.137,534.404,674.137,544.897L674.137,544.897z" fill="#80499C" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M641.032,536.867c-0.039,1.294-0.272,2.461-0.696,3.5c-0.425,1.039-1.013,1.965-1.765,2.775     c-0.752,0.811-1.654,1.51-2.706,2.098c-1.053,0.589-2.233,1.066-3.54,1.432l-1.078-2.216c0.863-0.17,1.68-0.435,2.452-0.794     c0.771-0.36,1.454-0.775,2.049-1.245c0.595-0.471,1.085-0.987,1.471-1.549c0.385-0.562,0.624-1.137,0.716-1.726h-5.746v-2.275     H641.032z M634.246,554.184v-7.237h12.375v7.237H634.246z M643.856,549.026h-6.805v3.04h6.805V549.026z M643.856,546.045v-10.238     h2.785v10.238H643.856z" fill="#FFFFFF" />
+                <path d="M648.151,540.377h8.923v2.157h-8.923V540.377z M656.779,546.888c0,0.549-0.098,1.056-0.294,1.52     c-0.196,0.464-0.477,0.866-0.843,1.206c-0.366,0.341-0.801,0.608-1.304,0.804c-0.504,0.196-1.062,0.294-1.677,0.294     c-0.628,0-1.196-0.098-1.706-0.294c-0.51-0.196-0.945-0.464-1.304-0.804c-0.36-0.34-0.637-0.745-0.833-1.216     c-0.196-0.471-0.294-0.974-0.294-1.51c0-0.549,0.101-1.056,0.304-1.52c0.203-0.464,0.483-0.866,0.843-1.207     c0.36-0.34,0.794-0.604,1.304-0.794c0.51-0.19,1.072-0.285,1.687-0.285c0.614,0,1.173,0.098,1.677,0.295     c0.503,0.196,0.938,0.464,1.304,0.804c0.366,0.34,0.647,0.742,0.843,1.206C656.682,545.852,656.779,546.352,656.779,546.888z      M650.249,537.239h4.981v2.157h-4.981V537.239z M654.348,546.888c0-0.497-0.16-0.915-0.481-1.255     c-0.32-0.34-0.723-0.51-1.206-0.51c-0.235,0-0.458,0.046-0.667,0.137c-0.209,0.091-0.392,0.216-0.549,0.372     c-0.157,0.157-0.281,0.344-0.373,0.559c-0.091,0.216-0.137,0.448-0.137,0.696c0,0.523,0.167,0.951,0.5,1.284     c0.333,0.334,0.742,0.5,1.226,0.5c0.484,0,0.886-0.173,1.206-0.52C654.187,547.807,654.348,547.385,654.348,546.888z      M661.447,554.399v-8.845h-1.255v8.021h-2.51v-17.473h2.51v7.236h1.255v-7.531h2.628v18.592H661.447z" fill="#FFFFFF" />
+                <path d="M603.985,554.419v-6.001h-6.962v-2.177h16.788v2.177h-7.08v6.001H603.985z M599.082,544.77v-8.08h2.726v2     h7.197v-2h2.765v8.08H599.082z M609.005,540.867h-7.197v1.706h7.197V540.867z" fill="#FFFFFF" />
+                <path d="M623.557,546.476c-0.353-0.117-0.732-0.304-1.137-0.559c-0.405-0.255-0.795-0.549-1.167-0.882     c-0.372-0.334-0.712-0.693-1.019-1.079c-0.308-0.385-0.546-0.775-0.716-1.167c-0.144,0.432-0.372,0.866-0.686,1.304     c-0.314,0.439-0.677,0.847-1.089,1.226c-0.412,0.379-0.853,0.713-1.324,1c-0.471,0.288-0.922,0.497-1.353,0.628l-1.393-2.157     c1.399-0.484,2.484-1.245,3.256-2.285c0.771-1.039,1.157-2.246,1.157-3.618v-2.118h2.824v1.961c0,0.746,0.104,1.415,0.314,2.01     c0.209,0.595,0.5,1.124,0.872,1.588c0.373,0.465,0.811,0.857,1.314,1.177c0.503,0.321,1.049,0.578,1.638,0.775L623.557,546.476z      M616.674,553.968v-6.119h2.765v3.962h9.629v2.157H616.674z M628.696,540.985h2.55v2.295h-2.55v6.08h-2.726v-13.552h2.726     V540.985z" fill="#FFFFFF" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M1274.131,1734.136c0,10.493-8.507,19-19,19h-49.177c-10.493,0-19-8.507-19-19l0,0     c0-10.493,8.507-19,19-19h49.177C1265.625,1715.136,1274.131,1723.642,1274.131,1734.136L1274.131,1734.136z" fill="#80499C" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M1241.026,1726.105c-0.039,1.294-0.271,2.461-0.696,3.5c-0.425,1.039-1.013,1.965-1.765,2.775     c-0.752,0.811-1.654,1.51-2.706,2.098c-1.053,0.589-2.233,1.066-3.54,1.432l-1.078-2.216c0.863-0.17,1.68-0.435,2.452-0.794     c0.771-0.36,1.454-0.775,2.049-1.246c0.595-0.471,1.085-0.987,1.471-1.549c0.385-0.562,0.624-1.137,0.716-1.726h-5.746v-2.275     H1241.026z M1234.24,1743.423v-7.237h12.375v7.237H1234.24z M1243.849,1738.265h-6.805v3.04h6.805V1738.265z M1243.849,1735.284     v-10.238h2.785v10.238H1243.849z" fill="#FFFFFF" />
+                <path d="M1248.145,1729.616h8.923v2.157h-8.923V1729.616z M1256.773,1736.127c0,0.549-0.098,1.056-0.294,1.52     c-0.196,0.464-0.477,0.866-0.843,1.206c-0.366,0.34-0.801,0.608-1.304,0.804c-0.504,0.196-1.062,0.294-1.677,0.294     c-0.628,0-1.196-0.098-1.706-0.294c-0.51-0.196-0.945-0.464-1.304-0.804c-0.36-0.34-0.637-0.745-0.833-1.216     c-0.196-0.471-0.294-0.974-0.294-1.51c0-0.549,0.101-1.056,0.304-1.52c0.203-0.464,0.483-0.866,0.843-1.207     c0.36-0.34,0.794-0.604,1.304-0.794c0.51-0.19,1.072-0.285,1.687-0.285c0.614,0,1.173,0.098,1.677,0.295     c0.503,0.196,0.938,0.464,1.304,0.804c0.366,0.34,0.647,0.742,0.843,1.206     C1256.676,1735.091,1256.773,1735.591,1256.773,1736.127z M1250.243,1726.478h4.981v2.157h-4.981V1726.478z M1254.342,1736.127     c0-0.497-0.16-0.915-0.481-1.255c-0.32-0.34-0.723-0.51-1.206-0.51c-0.235,0-0.458,0.046-0.667,0.137     c-0.209,0.091-0.392,0.216-0.549,0.372c-0.157,0.157-0.281,0.344-0.373,0.559c-0.091,0.216-0.137,0.448-0.137,0.696     c0,0.523,0.167,0.951,0.5,1.284c0.333,0.334,0.742,0.5,1.226,0.5c0.483,0,0.885-0.173,1.206-0.52     C1254.181,1737.046,1254.342,1736.624,1254.342,1736.127z M1261.441,1743.638v-8.845h-1.255v8.021h-2.51v-17.473h2.51v7.236     h1.255v-7.531h2.628v18.592H1261.441z" fill="#FFFFFF" />
+                <path d="M1203.979,1743.657v-6.001h-6.962v-2.177h16.788v2.177h-7.08v6.001H1203.979z M1199.076,1734.008v-8.08     h2.726v2h7.197v-2h2.765v8.08H1199.076z M1208.999,1730.106h-7.197v1.706h7.197V1730.106z" fill="#FFFFFF" />
+                <path d="M1223.552,1735.715c-0.353-0.117-0.732-0.304-1.137-0.559c-0.405-0.254-0.794-0.549-1.167-0.882     c-0.372-0.334-0.712-0.693-1.019-1.079c-0.308-0.385-0.546-0.775-0.716-1.167c-0.144,0.432-0.373,0.866-0.686,1.304     c-0.314,0.439-0.677,0.847-1.089,1.226c-0.412,0.379-0.853,0.713-1.324,1c-0.471,0.288-0.922,0.497-1.353,0.628l-1.393-2.157     c1.399-0.484,2.484-1.245,3.256-2.285c0.771-1.039,1.157-2.246,1.157-3.619v-2.118h2.824v1.961c0,0.746,0.104,1.415,0.314,2.01     c0.209,0.595,0.5,1.124,0.872,1.588c0.373,0.465,0.811,0.857,1.314,1.177c0.503,0.321,1.049,0.578,1.638,0.775L1223.552,1735.715     z M1216.668,1743.206v-6.119h2.765v3.962h9.629v2.157H1216.668z M1228.69,1730.224h2.55v2.295h-2.55v6.08h-2.726v-13.552h2.726     V1730.224z" fill="#FFFFFF" />
+            </g>
+        </g>
+    </g>
+    <g id="라인_4호선" shape-rendering="geometricPrecision" class="line 4호선">
+        <path d="   M1867.788,1346.503c0-58.707,47.592-106.299,106.3-106.299h70.737h123.167h114.333l113.833,0l113.75,0l101.341,0   c4.347,0,8.657-0.157,12.926-0.464c38.51-2.777,73.61-17.862,101.385-41.343c27.856-23.549,48.345-55.541,57.517-92.027   c3.486-13.867,5.337-28.383,5.337-43.331v-60.524v-103.5v-103v-104.25V588.721" fill="none" id="전체라인_4호선" stroke="#426FB5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="14" />
+        <g id="역_4호선" shape-rendering="geometricPrecision">
+            <circle cx="2788.414" cy="588.721" fill="#FFFFFF" id="역_안평" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2788.414" cy="691.765" fill="#FFFFFF" id="역_고촌" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2788.414" cy="795.015" fill="#FFFFFF" id="역_윗반송" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2788.414" cy="899.015" fill="#FFFFFF" id="역_영산대" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2788.414" cy="1002.515" fill="#FFFFFF" id="역_석대" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2783.077" cy="1106.371" fill="#FFFFFF" id="역_반여농산물시장" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2725.56" cy="1198.398" fill="#FFFFFF" id="역_금사" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2624.175" cy="1239.741" fill="#FFFFFF" id="역_서동" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2509.908" cy="1240.221" fill="#FFFFFF" id="역_명장" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2168.026" cy="1240.221" fill="#FFFFFF" id="역_수안" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2282.325" cy="1240.204" fill="#FFFFFF" id="역_낙민" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2396.333" cy="1240.221" fill="#FFFFFF" id="역_충렬사" r="6" stroke="#426FB5" stroke-miterlimit="10" stroke-width="2" class="mark" />
+        </g>
+        <g id="데코레이션_4호선" shape-rendering="geometricPrecision">
+            <g shape-rendering="geometricPrecision">
+                <circle cx="2788.595" cy="547.887" fill="#426FB5" r="19" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M2788.568,552.403h-7.489v-3.289l7.691-10.323h3.213v10.652h2.353v2.961h-2.353v4.099h-3.415V552.403z      M2788.568,543.294h-0.076l-4.58,6.148h4.656V543.294z" fill="#FFFFFF" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <circle cx="1911.492" cy="1332.511" fill="#426FB5" r="19" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M1911.721,1337.362h-7.489v-3.289l7.692-10.323h3.213v10.652h2.353v2.96h-2.353v4.099h-3.416V1337.362z      M1911.721,1328.253h-0.076l-4.579,6.148h4.655V1328.253z" fill="#FFFFFF" />
+            </g>
+        </g>
+    </g>
+    <g id="라인_3호선" shape-rendering="geometricPrecision" class="line 3호선">
+        <path d="   M2788.748,1629.985c0-88.332-64.645-161.566-149.206-174.972c-9.107-1.444-18.446-2.194-27.959-2.194h-42.311h-128.28h-198.167   h-262.667h-6.071c-18.805,0-36.469-4.883-51.794-13.45c-14.256-7.969-26.488-19.127-35.731-32.508   c-11.84-17.141-18.775-37.931-18.775-60.341c0-58.707-47.592-106.299-106.299-106.299h-23.497h-146h-146h-259.167h-63.314   c-16.212,0-31.915,2.177-46.833,6.256c-32.521,8.891-61.311,26.816-83.506,50.911c-29.072,31.561-46.826,73.706-46.826,119.999" fill="none" id="전체라인_3호선" stroke="#D4A556" stroke-linecap="round" stroke-miterlimit="10" stroke-width="14" />
+        <g id="역_3호선" shape-rendering="geometricPrecision">
+            <circle cx="1880.704" cy="1397.48" fill="#FFFFFF" id="역_사직" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1912.289" cy="1432.906" fill="#FFFFFF" id="역_종합운동장" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2242.825" cy="1452.819" fill="#FFFFFF" id="역_물만골" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2440.992" cy="1452.819" fill="#FFFFFF" id="역_배산" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2639.487" cy="1455.015" fill="#FFFFFF" id="역_망미" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1186.825" cy="1240.221" fill="#FFFFFF" id="역_구포" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1076.742" cy="1246.321" fill="#FFFFFF" id="역_강서구청" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="993.247" cy="1297.388" fill="#FFFFFF" id="역_체육공원" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1445.992" cy="1240.221" fill="#FFFFFF" id="역_숙등" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1592.051" cy="1240.221" fill="#FFFFFF" id="역_남산정" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1737.992" cy="1240.221" fill="#FFFFFF" id="역_만덕" r="6" stroke="#D4A556" stroke-miterlimit="10" stroke-width="2" class="mark" />
+        </g>
+        <g id="데코레이션_3호선" shape-rendering="geometricPrecision">
+            <g shape-rendering="geometricPrecision">
+                <circle cx="2745.328" cy="1637.609" fill="#D4A556" r="19" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M2744.063,1636.305c1.543,0.126,3.77-0.177,3.77-2.201c0-1.493-1.189-2.353-2.505-2.353     c-1.797,0-2.758,1.341-2.732,3.163h-3.416c0.126-3.618,2.48-6.123,6.123-6.123c2.834,0,5.946,1.746,5.946,4.909     c0,1.67-0.834,3.163-2.479,3.618v0.051c1.948,0.43,3.137,2.049,3.137,4.023c0,3.719-3.112,5.819-6.578,5.819     c-3.972,0-6.654-2.378-6.578-6.452h3.416c0.076,1.923,1.037,3.492,3.112,3.492c1.619,0,2.884-1.113,2.884-2.783     c0-2.682-2.353-2.631-4.099-2.631V1636.305z" fill="#FFFFFF" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <circle cx="986.657" cy="1422.463" fill="#D4A556" r="17" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M985.525,1421.022c1.381,0.113,3.373-0.159,3.373-1.97c0-1.336-1.064-2.105-2.241-2.105     c-1.607,0-2.468,1.199-2.445,2.83h-3.056c0.113-3.237,2.219-5.479,5.478-5.479c2.536,0,5.32,1.562,5.32,4.392     c0,1.494-0.747,2.83-2.219,3.238v0.045c1.743,0.385,2.807,1.834,2.807,3.599c0,3.328-2.785,5.206-5.886,5.206     c-3.554,0-5.954-2.128-5.886-5.773h3.056c0.068,1.721,0.928,3.124,2.784,3.124c1.449,0,2.581-0.996,2.581-2.49     c0-2.4-2.105-2.354-3.667-2.354V1421.022z" fill="#FFFFFF" />
+            </g>
+        </g>
+    </g>
+    <g id="라인_2호선" shape-rendering="geometricPrecision" class="line 2호선">
+        <path d="   M3499.818,1255.633c0,46.559-29.934,86.128-71.606,100.509c-7.567,2.612-15.522,4.393-23.754,5.234   c-3.596,0.368-7.245,0.556-10.939,0.556h-83.859h-46.093h-141.125h-142.125h-14.404c-8.403,0-16.669,0.605-24.76,1.77   c-31.72,4.57-60.748,17.763-84.765,36.954c-5.689,4.546-11.097,9.429-16.193,14.613c-24.764,25.194-42.158,57.513-48.644,92.952   c-1.843,10.071-2.805,20.393-2.805,30.875v90.636v146.532v130.75v128.75v53.826c0,31.652-6.917,61.689-19.323,88.681   c-18.663,40.608-49.747,74.324-88.385,96.283c-30.95,17.589-66.747,27.634-104.89,27.634h-14.991h-19.75h-97.25h-9.623   c-12.407,0-24.565-1.063-36.39-3.102c-50.911-8.781-95.626-35.669-127.272-73.794c-30.562-36.817-48.936-84.114-48.936-135.702   l0,0.675c0-51.718-18.919-95.177-49.677-126.108c-32.22-32.402-77.43-51.057-127.489-51.057h-20.687h-82.677h-103.25h-102.5   h-103.75h-68.699h-34.551h-50.82c-18.106,0-35.577-2.716-52.029-7.763c-34.258-10.509-64.096-31.125-86.034-58.37   c-24.461-30.377-39.102-68.995-39.102-111.033v-87.171v-8.184v-73.066v-81v-81.5v-73.75v-91v-70.75v-66.25v-63.5v-65v-63.5v-65v-64   v-63.5v-64.5v-65.544" fill="none" id="전체라인_2호선" stroke="#3CB44A" stroke-linecap="round" stroke-miterlimit="10" stroke-width="14" />
+        <g id="역_2호선" shape-rendering="geometricPrecision">
+            <circle cx="1300.673" cy="588.721" fill="#FFFFFF" id="역_양산" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="654.265" fill="#FFFFFF" id="역_남양산" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="718.765" fill="#FFFFFF" id="역_부산대양산캠퍼스" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="782.756" fill="#FFFFFF" id="역_증산" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="846.265" fill="#FFFFFF" id="역_호포" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="911.265" fill="#FFFFFF" id="역_금곡" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="974.765" fill="#FFFFFF" id="역_동원" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="1039.765" fill="#FFFFFF" id="역_율리" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="1103.266" fill="#FFFFFF" id="역_화명" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="1169.56" fill="#FFFFFF" id="역_수정" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2791.476" cy="1508.481" fill="#FFFFFF" id="역_민락" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2856.391" cy="1400.734" fill="#FFFFFF" id="역_센텀시티" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2788.748" cy="1776.265" fill="#FFFFFF" id="역_광안" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2788.748" cy="1907.015" fill="#FFFFFF" id="역_금련산" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2788.748" cy="2035.765" fill="#FFFFFF" id="역_남천" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2769.425" cy="2178.273" fill="#FFFFFF" id="역_경성대부경대" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2681.04" cy="2274.556" fill="#FFFFFF" id="역_대연" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2541.408" cy="2302.19" fill="#FFFFFF" id="역_못골" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2398.146" cy="2299.088" fill="#FFFFFF" id="역_지게골" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2270.874" cy="2225.305" fill="#FFFFFF" id="역_문현" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2221.938" cy="2089.592" fill="#FFFFFF" id="역_국제금융센터부산은행" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2172.261" cy="1964.158" fill="#FFFFFF" id="역_전포" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1941.409" cy="1913.101" fill="#FFFFFF" id="역_부암" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1838.159" cy="1913.101" fill="#FFFFFF" id="역_가야" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1735.658" cy="1913.101" fill="#FFFFFF" id="역_동의대" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1631.909" cy="1913.101" fill="#FFFFFF" id="역_개금" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1528.659" cy="1913.101" fill="#FFFFFF" id="역_냉정" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1425.726" cy="1905.339" fill="#FFFFFF" id="역_주례" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1339.775" cy="1846.969" fill="#FFFFFF" id="역_감전" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3499.818" cy="1255.633" fill="#FFFFFF" id="역_장산" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3404.481" cy="1361.32" fill="#FFFFFF" id="역_중동" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3263.528" cy="1361.932" fill="#FFFFFF" id="역_해운대" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="3122.574" cy="1361.932" fill="#FFFFFF" id="역_동백" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="1331.266" fill="#FFFFFF" id="역_구명" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="1405.015" fill="#FFFFFF" id="역_구남" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="1486.515" fill="#FFFFFF" id="역_모라" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="1567.515" fill="#FFFFFF" id="역_모덕" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="1648.765" fill="#FFFFFF" id="역_덕포" r="6" stroke="#3CB44A" stroke-miterlimit="10" stroke-width="2" class="mark" />
+        </g>
+        <g id="데코레이션_2호선" shape-rendering="geometricPrecision">
+            <g shape-rendering="geometricPrecision">
+                <circle cx="1300.823" cy="548.575" fill="#3CB44A" r="19" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M1294.726,545.854c-0.127-4.048,2.176-7.16,6.427-7.16c3.239,0,6.072,2.075,6.072,5.541     c0,2.657-1.417,4.125-3.163,5.364c-1.746,1.24-3.821,2.252-5.111,4.074h8.375v3.087h-13.005c0.025-4.099,2.53-5.845,5.591-7.919     c1.569-1.063,3.694-2.151,3.719-4.326c0-1.67-1.113-2.732-2.657-2.732c-2.125,0-2.808,2.201-2.808,4.073H1294.726z" fill="#FFFFFF" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <circle cx="3499.818" cy="1219.634" fill="#3CB44A" r="19" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M3493.719,1217.117c-0.126-4.048,2.176-7.16,6.427-7.16c3.239,0,6.072,2.075,6.072,5.541     c0,2.656-1.417,4.124-3.162,5.364c-1.746,1.24-3.821,2.252-5.111,4.074h8.374v3.087h-13.005c0.025-4.099,2.53-5.844,5.592-7.919     c1.568-1.063,3.694-2.151,3.719-4.327c0-1.67-1.113-2.733-2.656-2.733c-2.125,0-2.809,2.201-2.809,4.073H3493.719z" fill="#FFFFFF" />
+            </g>
+        </g>
+    </g>
+    <g id="라인_1호선" shape-rendering="geometricPrecision" class="line 1호선">
+        <path d="   M1300.673,2933.224c0-16.136,0-48.165,0-64.545c0-0.006,0-0.179,0-0.501c0-5.231,0-49.913,0-65.159c0-8.268,0-33.07,0-33.07   v-23.599v-8.118v-9.91c0-19.007,2.494-37.432,7.174-54.965c0.764-2.862,1.586-5.7,2.465-8.513   c5.253-16.813,12.537-32.728,21.566-47.459c4.911-8.012,10.337-15.675,16.234-22.94c6.619-8.156,13.829-15.811,21.566-22.901   c11.695-10.718,24.593-20.144,38.468-28.052c4.479-2.553,9.06-4.948,13.735-7.177c18.932-9.028,39.409-15.337,60.927-18.425   c0.285-0.041,0.57-0.081,0.855-0.121c9.677-1.348,19.562-2.045,29.609-2.045h38.879h14.342h10.727h42.931h32.009h36.491h50.175   h17.992h8.643h56.699h2.992h6.921c21.234,0,41.74-3.113,61.088-8.907c2.764-0.828,5.504-1.71,8.22-2.646   c18.519-6.383,35.879-15.252,51.682-26.209c6.463-4.481,12.666-9.312,18.581-14.464c10.152-8.843,19.457-18.634,27.776-29.235   c7.894-10.06,14.9-20.848,20.901-32.249c4.29-8.151,8.067-16.614,11.287-25.347c5.47-14.836,9.332-30.45,11.376-46.63   c0.831-6.582,1.362-13.258,1.577-20.013c0.073-2.29,0.11-4.589,0.11-6.897v-42.609v-15.664v-54.67v-10.168v-4.515v-54.15v-6.329   v-61.838v-1.835v-64.832v-4.167v-69.334v-122.5v-109.5v-109.333v-119v-105.333v-107v-72v-72.833v-71.834v-73v-72v-72.5v-72.333   v-72.5v-72.627" fill="none" id="전체라인_1호선" stroke="#F0602F" stroke-linecap="round" stroke-miterlimit="10" stroke-width="14" />
+        <g id="역_1호선" shape-rendering="geometricPrecision">
+            <circle cx="2044.669" cy="588.721" fill="#FFFFFF" id="역_노포" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="661.357" fill="#FFFFFF" id="역_범어사" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="733.849" fill="#FFFFFF" id="역_남산" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="806.182" fill="#FFFFFF" id="역_두실" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="878.682" fill="#FFFFFF" id="역_구서" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="950.682" fill="#FFFFFF" id="역_장전" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="1023.682" fill="#FFFFFF" id="역_부산대" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="1095.515" fill="#FFFFFF" id="역_온천장" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="1168.349" fill="#FFFFFF" id="역_명륜" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="1571.682" fill="#FFFFFF" id="역_시청" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="1681.015" fill="#FFFFFF" id="역_양정" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.669" cy="1790.515" fill="#FFFFFF" id="역_부전_1호선" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.66" cy="1986.487" fill="#FFFFFF" id="역_범내골" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.662" cy="2051.322" fill="#FFFFFF" id="역_범일" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.657" cy="2114.985" fill="#FFFFFF" id="역_좌천_1호선" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.651" cy="2180.024" fill="#FFFFFF" id="역_부산진" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.659" cy="2244.829" fill="#FFFFFF" id="역_초량" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2044.566" cy="2310.037" fill="#FFFFFF" id="역_부산역" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="2031.579" cy="2376.7" fill="#FFFFFF" id="역_중앙" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1999.416" cy="2434.265" fill="#FFFFFF" id="역_남포" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1953" cy="2477.981" fill="#FFFFFF" id="역_자갈치" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1893.163" cy="2506.85" fill="#FFFFFF" id="역_토성" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1825.099" cy="2515.702" fill="#FFFFFF" id="역_동대신" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1756.816" cy="2515.713" fill="#FFFFFF" id="역_서대신" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1688.607" cy="2515.706" fill="#FFFFFF" id="역_대티" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1620.159" cy="2515.718" fill="#FFFFFF" id="역_괴정" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1552.148" cy="2515.683" fill="#FFFFFF" id="역_사하" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1483.662" cy="2517.768" fill="#FFFFFF" id="역_당리" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1421.876" cy="2536.328" fill="#FFFFFF" id="역_하단" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1369.687" cy="2571.54" fill="#FFFFFF" id="역_신평" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1331.868" cy="2617.439" fill="#FFFFFF" id="역_동매" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1307.83" cy="2673.41" fill="#FFFFFF" id="역_장림" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.673" cy="2738.26" fill="#FFFFFF" id="역_신장림" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.68" cy="2803.065" fill="#FFFFFF" id="역_낫개" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.71" cy="2868.135" fill="#FFFFFF" id="역_다대포항" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+            <circle cx="1300.671" cy="2933.286" fill="#FFFFFF" id="역_다대포해수욕장" r="6" stroke="#F0602F" stroke-miterlimit="10" stroke-width="2" class="mark" />
+        </g>
+        <g id="데코레이션_1호선" shape-rendering="geometricPrecision">
+            <g shape-rendering="geometricPrecision">
+                <circle cx="2044.669" cy="548.138" fill="#F0602F" r="19" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M2047.024,556.875h-3.592v-11.487h-4.453v-2.707c2.505,0.051,4.807-0.809,5.187-3.516h2.859V556.875z" fill="#FFFFFF" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <circle cx="1301.362" cy="2970.399" fill="#F0602F" r="19" />
+            </g>
+            <g shape-rendering="geometricPrecision">
+                <path d="M1304.317,2980.059h-3.593v-11.487h-4.453v-2.707c2.505,0.051,4.807-0.809,5.187-3.517h2.859V2980.059z" fill="#FFFFFF" />
+            </g>
+        </g>
+    </g>
+    <g id="라벨_1호선" shape-rendering="geometricPrecision">
+        <text id="노포" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 602.2297)">노포</text>
+        <text id="범어사" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 675.2626)">범어사</text>
+        <text id="남산" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 746.1679)">남산</text>
+        <text id="두실" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 820.3232)">두실</text>
+        <text id="구서" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 891.9716)">구서</text>
+        <text id="장전" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 963.1181)">장전</text>
+        <text id="부산대" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1036.0205)">부산대</text>
+        <text id="온천장" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1108.6377)">온천장</text>
+        <text id="명륜" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1181.2295)">명륜</text>
+        <text id="시청" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1584.9229)">시청</text>
+        <text id="양정" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1694.1572)">양정</text>
+        <text id="부전" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1803.71)">부전</text>
+        <text id="범내골" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1935.0804 1998.0684)">범내골</text>
+        <text id="범일" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1966.1678 2064.1753)">범일</text>
+        <text id="좌천" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1966.1678 2127.7847)">좌천</text>
+        <text id="부산진" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1935.5477 2193.3635)">부산진</text>
+        <text id="초량" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1963.5179 2258.7529)">초량</text>
+        <text id="부산역" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1934.5481 2322.9792)">부산역</text>
+        <text id="중앙" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1950.7877 2378.8311)">중앙</text>
+        <text id="남포" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1920.5944 2427.8931)">남포</text>
+        <text id="자갈치" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1965.0916 2519.6409)">자갈치</text>
+        <text id="토성" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1848.204 2483.4351)">토성</text>
+        <text id="동대신" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1782.1913 2564.9353)">동대신</text>
+        <text id="서대신" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1710.9275 2490.9695)">서대신</text>
+        <text id="대티" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1662.1969 2564.9353)">대티</text>
+        <text id="괴정" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1593.105 2489.9695)">괴정</text>
+        <text id="사하" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1520.4059 2489.9697)">사하</text>
+        <text id="당리" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1445.5076 2490.9702)">당리</text>
+        <text id="하단" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1368.9844 2510.0913)">하단</text>
+        <text id="신평" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1300.9729 2553.0916)">신평</text>
+        <text id="동매" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1249.3173 2618.4253)">동매</text>
+        <text id="장림" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1226.6503 2685.0916)">장림</text>
+        <text id="신장림" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1190.995 2752.2583)">신장림</text>
+        <text id="낫개" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1219.6155 2816.7581)">낫개</text>
+        <text id="다대포항" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1158.6477 2882.0913)">다대포항</text>
+        <text id="다대포해수욕장" class="1호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1068.2715 2946.4243)">다대포해수욕장</text>
+    </g>
+    <g id="라벨_2호선" shape-rendering="geometricPrecision">
+        <text id="양산" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 603.2297)">양산</text>
+        <text id="남양산" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 665.9365)">남양산</text>
+        <text id="부산대양산캠퍼스" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 730.7079)">부산대양산캠퍼스</text>
+        <text id="증산" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 795.248)">증산</text>
+        <text id="호포" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 858.6074)">호포</text>
+        <text id="금곡" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 924.0908)">금곡</text>
+        <text id="동원" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 988.1142)">동원</text>
+        <text id="율리" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1053.2139)">율리</text>
+        <text id="화명" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1116.2041)">화명</text>
+        <text id="수정" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1183.123)">수정</text>
+        <text id="구명" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1343.3232)">구명</text>
+        <text id="구남" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1415.9229)">구남</text>
+        <text id="모라" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1498.1123)">모라</text>
+        <text id="모덕" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1577.8037)">모덕</text>
+        <text id="덕포" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1661.1201)">덕포</text>
+        <text id="감전" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1356.9381 1840.709)">감전</text>
+        <text id="주례" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1416.6583 1885.0282)">주례</text>
+        <text id="냉정" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1500.777 1889.5145)">냉정</text>
+        <text id="개금" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1601.8077 1889.5145)">개금</text>
+        <text id="동의대" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1689.234 1889.5145)">동의대</text>
+        <text id="가야" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1806.6686 1889.5145)">가야</text>
+        <text id="부암" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1913.2135 1889.5145)">부암</text>
+        <text id="전포" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2191.25 1956.8896)">전포</text>
+        <text id="국제금융센터·부산은행" class="2호선 station" visibility="hidden" transform="matrix(1 0 0 1 2243.6992 2084.0068)">
+            <tspan font-size="36" letter-spacing="-1" x="0" y="0">국제금융센터·</tspan>
+            <tspan font-size="36" letter-spacing="-1" x="0" y="42.2">부산은행</tspan>
+        </text>
+        <text id="문현" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2288.7329 2215.2725)">문현</text>
+        <text id="지게골" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2359.6055 2270.5886)">지게골</text>
+        <text id="못골" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2513.5532 2275.5886)">못골</text>
+        <text id="대연" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2619.2227 2252.8386)">대연</text>
+        <text id="경성대·부경대" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2792.885 2201.9968)">경성대·부경대</text>
+        <text id="남천" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2810.218 2047.873)">남천</text>
+        <text id="금련산" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2810.218 1918.5518)">금련산</text>
+        <text id="광안" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2810.218 1787.5996)">광안</text>
+        <text id="민락" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2812.218 1525.0234)">민락</text>
+        <text id="센텀시티" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2865.5183 1437.5077)">센텀시티</text>
+        <text id="동백" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3096.0081 1409.2147)">동백</text>
+        <text id="해운대" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3220.4578 1409.2147)">해운대</text>
+        <text id="중동" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3371.3389 1334.8365)">중동</text>
+        <text id="장산" class="2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3419.885 1270.5121)">장산</text>
+    </g>
+    <g id="라벨_3호선" shape-rendering="geometricPrecision">
+        <text id="망미" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2602.1929 1503.4736)">망미</text>
+        <text id="물만골" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2200.9272 1500.4746)">물만골</text>
+        <text id="배산" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2410.6519 1500.4746)">배산</text>
+        <text id="종합운동장" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1744.2902 1464.7245)">종합운동장</text>
+        <text id="사직" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1797.6184 1413.2551)">사직</text>
+        <text id="만덕" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1711.1232 1287.876)">만덕</text>
+        <text id="남산정" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1550.4191 1287.876)">남산정</text>
+        <text id="숙등" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1418.0553 1287.876)">숙등</text>
+        <text id="구포" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1158.7789 1287.458)">구포</text>
+        <text id="강서구청" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 996.8888 1227.0811)">강서구청</text>
+        <text id="체육공원" class="3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1008.0162 1327.8555)">체육공원</text>
+    </g>
+    <g id="라벨_4호선" shape-rendering="geometricPrecision">
+        <text id="수안" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2137.8408 1286.0000)">수안</text>
+        <text id="낙민" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2251.1951 1286.0000)">낙민</text>
+        <text id="충렬사" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2351.6306 1286.0000)">충렬사</text>
+        <text id="명장" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2479.9348 1286.0000)">명장</text>
+        <text id="서동" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2592.9956 1286.0000)">서동</text>
+        <text id="금사" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2744.1909 1226.5127)">금사</text>
+        <text id="반여농산물시장" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2804.6887 1119.3643)">반여농산물시장</text>
+        <text id="석대" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2806.6887 1015.3583)">석대</text>
+        <text id="영산대" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2806.6887 912.3242)">영산대</text>
+        <text id="윗반송" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2806.6887 806.9208)">윗반송</text>
+        <text id="고촌" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2806.6887 704.8124)">고촌</text>
+        <text id="안평" class="4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2806.6887 601.2297)">안평</text>
+    </g>
+    <g id="라벨_부산김해경전철" shape-rendering="geometricPrecision">
+        <text id="괘법르네시떼" class="부산김해경전철 station" visibility="hidden" transform="matrix(1 0 0 1 1217.7321 1930.7568)">
+            <tspan font-size="36" letter-spacing="-1" x="0" y="0">괘법</tspan>
+            <tspan font-size="36" letter-spacing="-1" x="0" y="42.2">르네시떼</tspan>
+        </text>
+        <text id="서부산유통지구" class="부산김해경전철 station" visibility="hidden" transform="matrix(1 0 0 1 1009.292 1955.1748)">
+            <tspan font-size="36" letter-spacing="-1" x="0" y="0">서부산</tspan>
+            <tspan font-size="36" letter-spacing="-1" x="-28.62" y="42.2">유통지구</tspan>
+        </text>
+        <text id="공항" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 891.3232 1853.8616)">공항</text>
+        <text id="덕두" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 865.3232 1705.0771)">덕두</text>
+        <text id="등구" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 865.3232 1573.5557)">등구</text>
+        <text id="평강" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 846.3834 1364.0625)">평강</text>
+        <text id="대사" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 882.5563 1260.8037)">대사</text>
+        <text id="불암" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 776.8737 1219.2772)">불암</text>
+        <text id="지내" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 698.7365 1209.6307)">지내</text>
+        <text id="김해대학" class="부산김해경전철 station" visibility="hidden" transform="matrix(1 0 0 1 563.2049 1218.7755)">
+            <tspan font-size="36" letter-spacing="-1" x="0" y="0">김해</tspan>
+            <tspan font-size="36" letter-spacing="-1" x="0" y="42.2">대학</tspan>
+        </text>
+        <text id="인제대" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 620.9602 1132.8552)">인제대</text>
+        <text id="김해시청" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 610.7175 1069.1807)">김해시청</text>
+        <text id="부원" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 610.7175 1002.5654)">부원</text>
+        <text id="봉황" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 610.7175 935.7001)">봉황</text>
+        <text id="수로왕릉" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 610.7175 867.3349)">수로왕릉</text>
+        <text id="박물관" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 610.7175 800.9687)">박물관</text>
+        <text id="연지공원" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 610.7175 734.6035)">연지공원</text>
+        <text id="장신대" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 610.7175 668.9882)">장신대</text>
+        <text id="가야대" class="부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 610.7175 605.2297)">가야대</text>
+    </g>
+    <g id="라벨_동해선" shape-rendering="geometricPrecision">
+        <text id="거제해맞이" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1806.6309 1642.7926)">거제해맞이</text>
+        <text id="부전_동해선" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1896.011 1804.3103)">부전</text>
+        <text id="동래_동해선" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2178.1226 1389.7463)">동래</text>
+        <text id="안락" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2327.1179 1389.7463)">안락</text>
+        <text id="부산원동" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2447.1782 1389.7463)">부산원동</text>
+        <text id="재송" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2626.7825 1389.7463)">재송</text>
+        <text id="센텀" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2774.1719 1389.7463)">센텀</text>
+        <text id="신해운대" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3107.9995 1309.3948)">신해운대</text>
+        <text id="송정" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3146.832 1246.7467)">송정</text>
+        <text id="오시리아" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 1176.8726)">오시리아</text>
+        <text id="기장" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 1108.1108)">기장</text>
+        <text id="일광" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 1039.3489)">일광</text>
+        <text id="좌천_동해선" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 972.5864)">좌천</text>
+        <text id="월내" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 904.8243)">월내</text>
+        <text id="서생" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 838.063)">서생</text>
+        <text id="남창" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 769.3005)">남창</text>
+        <text id="망양" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 700.5385)">망양</text>
+        <text id="덕하" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 634.7768)">덕하</text>
+        <text id="개운포" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 566.0147)">개운포</text>
+        <text id="태화강" class="동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 3158.3765 494.3005)">태화강</text>
+    </g>
+    <g id="라벨_환승역" shape-rendering="gemoetricPrecision">
+        <text id="덕천" class="2호선 3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1319.1874 1286.376)">덕천</text>
+        <text id="대저" class="3호선 부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 865.3232 1435.7061)">대저</text>
+        <text id="수영" class="2호선 3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2810.218 1651.0557)">수영</text>
+        <text id="미남" class="3호선 4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1785.0389 1345.2578)">미남</text>
+        <text id="벡스코" class="2호선 동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2933.7913 1323.9537)">벡스코</text>
+        <text id="사상" class="2호선 부산김해경전철 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1322.6881 1743.0146)">사상</text>
+        <text id="교대" class="1호선 동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1389.7463)">교대</text>
+        <text id="동래" class="1호선 4호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1286.0000)">동래</text>
+        <text id="서면" class="1호선 2호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1896.0146)">서면</text>
+        <text id="연산" class="1호선 3호선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 2064.4038 1499.0765)">연산</text>
+        <text id="거제" class="3호선 동해선 station" visibility="hidden" font-size="36" letter-spacing="-1" transform="matrix(1 0 0 1 1897.0105 1499.076)">거제</text>
+    </g>
+    <g id="환승역" shape-rendering="geometricPrecision">
+        <g id="환승역_동래" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M2057.666,1255.563c0-0.001,0-0.004,0-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997c0,0.001,0,0.004,0,0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C2051.851,1268.558,2057.666,1262.74,2057.666,1255.563z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M2054.027,1255.563c0-0.001,0-0.003,0-0.003l-0.006-15.596c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358c0,0,0,0.003,0,0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C2049.84,1264.919,2054.027,1260.73,2054.027,1255.563z" fill="#FFFFFF" class="transferFill" />
+            <path d="M2049.169,1255.564v-0.002c0-1.202-0.469-2.332-1.319-3.182s-1.98-1.317-3.182-1.317    c-2.48,0.001-4.498,2.02-4.498,4.5c0.001,2.483,2.021,4.501,4.502,4.5C2047.151,1260.063,2049.169,1258.044,2049.169,1255.564z" fill="#F0602F" class="fill 1호선" />
+            <path d="M2045.051,1244.45c2.306-0.199,4.112-2.167,4.112-4.478l0,0c0-0.13-0.006-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.095c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.005,0.26,0.017,0.392    C2040.394,1242.827,2042.579,1244.664,2045.051,1244.45z" fill="#426FB5" class="fill 4호선" />
+        </g>
+        <g id="환승역_교대" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M2057.666,1362.289c0-0.001,0-0.004,0-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997c0,0.001,0,0.004,0,0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C2051.851,1375.283,2057.666,1369.465,2057.666,1362.289z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M2054.027,1362.289c0-0.001,0-0.003,0-0.003l-0.006-15.597c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358v0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C2049.84,1371.644,2054.027,1367.456,2054.027,1362.289z" fill="#FFFFFF" class="transferFill" />
+            <path d="M2049.169,1362.289v-0.002c0-1.202-0.469-2.332-1.319-3.182s-1.98-1.317-3.182-1.317    c-2.48,0.001-4.498,2.02-4.498,4.5c0.001,2.483,2.021,4.501,4.502,4.5C2047.151,1366.788,2049.169,1364.769,2049.169,1362.289z" fill="#F0602F" class="fill 1호선" />
+            <path d="M2045.051,1351.175c2.306-0.199,4.112-2.167,4.112-4.478l0,0c0-0.13-0.006-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.096c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.005,0.26,0.017,0.392    C2040.394,1349.552,2042.579,1351.389,2045.051,1351.175z" fill="#80A8D8" class="fill 동해선" />
+        </g>
+        <g id="환승역_미남" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M1880.788,1340.556c0-0.001,0-0.004,0-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997c0,0.001,0,0.004,0,0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C1874.973,1353.55,1880.788,1347.732,1880.788,1340.556z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M1877.149,1340.556v-0.003l-0.006-15.597c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358v0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C1872.962,1349.911,1877.149,1345.723,1877.149,1340.556z" fill="#FFFFFF" class="transferFill" />
+            <path d="M1872.291,1340.556v-0.002c0-1.202-0.469-2.332-1.319-3.182c-0.85-0.85-1.98-1.317-3.182-1.317    c-2.481,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C1870.274,1345.055,1872.291,1343.036,1872.291,1340.556z" fill="#D4A556" class="fill 3호선" />
+            <path d="M1868.173,1329.443c2.306-0.2,4.112-2.167,4.112-4.478l0,0c0-0.13-0.006-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.095c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.006,0.26,0.017,0.392    C1863.516,1327.819,1865.701,1329.656,1868.173,1329.443z" fill="#426FB5" class="fill 4호선" />
+        </g>
+        <g id="환승역_연산" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M2057.669,1468.188c0,0,0-0.004,0-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997v0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C2051.854,1481.183,2057.669,1475.365,2057.669,1468.188z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M2054.03,1468.188v-0.003l-0.006-15.596c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358v0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C2049.843,1477.544,2054.03,1473.355,2054.03,1468.188z" fill="#FFFFFF" class="transferFill" />
+            <path d="M2049.172,1468.189v-0.002c0-1.202-0.469-2.332-1.319-3.182s-1.98-1.317-3.182-1.317    c-2.48,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C2047.154,1472.688,2049.172,1470.669,2049.172,1468.189z" fill="#F0602F" class="fill 1호선" />
+            <path d="M2045.054,1457.075c2.306-0.199,4.112-2.167,4.112-4.478l0,0c0-0.13-0.006-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.095c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.005,0.26,0.017,0.392    C2040.396,1455.452,2042.582,1457.289,2045.054,1457.075z" fill="#D4A556" class="fill 3호선" />
+        </g>
+        <g id="환승역_거제" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M1987.925,1468.188c0,0,0-0.004,0-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997v0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C1982.11,1481.183,1987.925,1475.365,1987.925,1468.188z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M1984.286,1468.188v-0.003l-0.006-15.596c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358v0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C1980.099,1477.544,1984.286,1473.355,1984.286,1468.188z" fill="#FFFFFF" class="transferFill" />
+            <path d="M1979.428,1468.189v-0.002c0-1.202-0.469-2.332-1.319-3.182s-1.98-1.317-3.182-1.317    c-2.481,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C1977.41,1472.688,1979.428,1470.669,1979.428,1468.189z" fill="#80A8D8" class="fill 동해선" />
+            <path d="M1975.31,1457.075c2.306-0.199,4.112-2.167,4.112-4.478l0,0c0-0.13-0.006-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.095c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.005,0.26,0.017,0.392    C1970.653,1455.452,1972.838,1457.289,1975.31,1457.075z" fill="#D4A556" class="fill 3호선" />
+        </g>
+        <g id="환승역_서면" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M2057.669,1913.765c0-0.001,0-0.004,0-0.004l-0.006-15.598c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997v0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C2051.854,1926.759,2057.669,1920.941,2057.669,1913.765z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M2054.03,1913.765v-0.003l-0.006-15.596c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358v0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C2049.843,1923.121,2054.03,1918.932,2054.03,1913.765z" fill="#FFFFFF" class="transferFill" />
+            <path d="M2049.172,1913.765v-0.002c0-1.202-0.469-2.332-1.319-3.182c-0.85-0.85-1.98-1.317-3.182-1.317    c-2.481,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C2047.154,1918.264,2049.172,1916.245,2049.172,1913.765z" fill="#3CB44A" class="fill 2호선" />
+            <path d="M2045.054,1902.652c2.306-0.2,4.112-2.167,4.112-4.478l0,0c0-0.13-0.006-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.095c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.005,0.26,0.017,0.392    C2040.397,1901.028,2042.582,1902.865,2045.054,1902.652z" fill="#F0602F" class="fill 1호선" />
+        </g>
+        <g id="환승역_덕천" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M1313.673,1255.921c0-0.001,0-0.004,0-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997c0,0.001,0,0.004,0,0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C1307.858,1268.915,1313.673,1263.097,1313.673,1255.921z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M1310.034,1255.921c0,0,0-0.003,0-0.004l-0.006-15.596c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358c0,0,0,0.003,0,0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C1305.847,1265.277,1310.034,1261.088,1310.034,1255.921z" fill="#FFFFFF" class="transferFill" />
+            <path d="M1305.176,1255.922v-0.002c0-1.202-0.469-2.332-1.319-3.182c-0.85-0.85-1.98-1.317-3.182-1.317    c-2.48,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C1303.158,1260.42,1305.176,1258.402,1305.176,1255.922z" fill="#3CB44A" class="fill 2호선" />
+            <path d="M1301.058,1244.808c2.306-0.199,4.112-2.167,4.112-4.478v0c0-0.13-0.005-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.096c-2.306,0.2-4.113,2.167-4.113,4.479c0,0.13,0.006,0.26,0.017,0.392    C1296.401,1243.184,1298.586,1245.022,1301.058,1244.808z" fill="#D4A556" class="fill 3호선" />
+        </g>
+        <g id="환승역_대저" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M959.345,1430.557v-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997v0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C953.529,1443.551,959.345,1437.733,959.345,1430.557z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M955.706,1430.557c0,0,0-0.003,0-0.004l-0.006-15.596c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358c0,0,0,0.003,0,0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C951.519,1439.912,955.706,1435.724,955.706,1430.557z" fill="#FFFFFF" class="transferFill" />
+            <path d="M950.848,1430.557v-0.002c0-1.202-0.469-2.332-1.319-3.182c-0.85-0.85-1.98-1.317-3.182-1.317    c-2.481,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C948.83,1435.056,950.848,1433.037,950.848,1430.557z" fill="#80499C" class="fill 부산김해경전철" />
+            <path d="M946.73,1419.443c2.306-0.199,4.112-2.167,4.112-4.478v0c0-0.13-0.005-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.096c-2.306,0.2-4.113,2.167-4.113,4.479c0,0.13,0.006,0.26,0.017,0.392    C942.072,1417.82,944.258,1419.657,946.73,1419.443z" fill="#D4A556" class="fill 3호선" />
+        </g>
+        <g id="환승역_사상" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M1313.734,1741.934c0-0.001,0-0.004,0-0.004l-0.006-15.598c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997v0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C1307.918,1754.928,1313.734,1749.11,1313.734,1741.934z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M1310.094,1741.934c0-0.001,0-0.003,0-0.003l-0.006-15.597c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358v0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C1305.907,1751.29,1310.094,1747.101,1310.094,1741.934z" fill="#FFFFFF" class="transferFill" />
+            <path d="M1305.237,1741.934v-0.002c0-1.202-0.469-2.332-1.319-3.182s-1.98-1.317-3.182-1.317    c-2.48,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C1303.219,1746.433,1305.237,1744.415,1305.237,1741.934z" fill="#80499C" class="fill 부산김해경전철" />
+            <path d="M1301.119,1730.821c2.306-0.199,4.112-2.167,4.112-4.478v0c0-0.13-0.006-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.095c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.006,0.26,0.017,0.392    C1296.461,1729.197,1298.646,1731.035,1301.119,1730.821z" fill="#3CB44A" class="fill 2호선" />
+        </g>
+        <g id="환승역_수영" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M2801.747,1645.757v-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997v0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C2795.932,1658.751,2801.747,1652.933,2801.747,1645.757z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M2798.108,1645.757c0,0,0-0.003,0-0.004l-0.006-15.596c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358c0,0,0,0.003,0,0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C2793.921,1655.113,2798.108,1650.924,2798.108,1645.757z" fill="#FFFFFF" class="transferFill" />
+            <path d="M2793.25,1645.757v-0.002c0-1.202-0.469-2.332-1.319-3.182c-0.85-0.85-1.98-1.317-3.182-1.317    c-2.48,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C2791.233,1650.256,2793.25,1648.238,2793.25,1645.757z" fill="#3CB44A" class="fill 2호선" />
+            <path d="M2789.132,1634.644c2.306-0.199,4.112-2.167,4.112-4.478v0c0-0.13-0.005-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.87-4.095c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.006,0.26,0.017,0.392    C2784.475,1633.02,2786.66,1634.858,2789.132,1634.644z" fill="#D4A556" class="fill 3호선" />
+        </g>
+        <g id="환승역_벡스코" shape-rendering="geometricPrecision" class="transfer">
+            <path d="M2993.249,1361.903v-0.005l-0.006-15.596c-0.003-7.178-5.824-12.995-13.002-12.992    c-7.177,0.003-12.992,5.821-12.992,12.997v0.005l0.006,15.596c0.003,7.178,5.824,12.995,13.002,12.992    C2987.434,1374.897,2993.249,1369.079,2993.249,1361.903z" fill="#1D1D1B" class="transferBorder" />
+            <path d="M2989.61,1361.903v-0.004l-0.006-15.596c-0.002-5.168-4.193-9.356-9.361-9.354    c-5.167,0.002-9.354,4.191-9.354,9.358v0.004l0.006,15.596c0.002,5.168,4.193,9.356,9.361,9.354    C2985.423,1371.259,2989.61,1367.07,2989.61,1361.903z" fill="#FFFFFF" class="transferFill" />
+            <path d="M2984.752,1361.904v-0.002c0-1.202-0.469-2.332-1.319-3.182c-0.85-0.85-1.98-1.317-3.182-1.317    c-2.481,0.001-4.499,2.02-4.499,4.5c0.001,2.483,2.021,4.501,4.502,4.5C2982.734,1366.402,2984.752,1364.384,2984.752,1361.904z" fill="#3CB44A" class="fill 2호선" />
+            <path d="M2980.634,1350.79c2.306-0.199,4.112-2.167,4.112-4.478v0c0-0.13-0.006-0.261-0.017-0.392    c-0.214-2.472-2.399-4.309-4.871-4.096c-2.306,0.199-4.113,2.167-4.113,4.479c0,0.13,0.005,0.26,0.017,0.392    C2975.977,1349.167,2978.162,1351.004,2980.634,1350.79z" fill="#80A8D8" class="fill 동해선" />
+        </g>
+    </g>
+</svg>
