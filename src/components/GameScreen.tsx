@@ -72,7 +72,6 @@ export function GameScreen({
   const [toast, setToast] = useState<Toast | null>(null);
   const [ended, setEnded] = useState(false);
   const [sheet, setSheet] = useState<"none" | "view" | "progress">("none");
-  const [draft, setDraft] = useState("");
 
   const inputRef = useRef<HTMLInputElement>(null);
   const toastTimer = useRef<number | undefined>(undefined);
@@ -214,7 +213,7 @@ export function GameScreen({
       if (!engine || !playing) return;
       if (!raw.trim()) return;
       if (!selected) {
-        flash({ kind: "warning", text: "노선을 먼저 선택하세요" });
+        flash({ kind: "warning", text: "노선 선택" });
         return;
       }
 
@@ -229,7 +228,7 @@ export function GameScreen({
       if (hit.revealed) {
         flash({
           kind: "duplicate",
-          text: isTerritory ? "이미 누군가 차지한 역" : "이미 제출",
+          text: isTerritory ? "이미 차지됨" : "이미 제출",
         });
         return;
       }
@@ -246,7 +245,7 @@ export function GameScreen({
           engine.reveal(hit.id, multi.me.color);
           flash({ kind: "correct", text: "차지!" });
         } else {
-          flash({ kind: "duplicate", text: "한발 늦었습니다" });
+          flash({ kind: "duplicate", text: "한발 늦음" });
         }
         return;
       }
@@ -257,6 +256,20 @@ export function GameScreen({
     },
     [engine, playing, selected, region, flash, isTerritory, multi],
   );
+
+  /** 입력칸을 읽고 비운 뒤 채점한다. */
+  const commit = useCallback(() => {
+    const input = inputRef.current;
+    if (!input) return;
+    const value = input.value;
+    input.value = "";
+    // Enter가 한글 조합을 끝내면서 input 이벤트를 한 번 더 흘린다.
+    // 그 이벤트가 방금 지운 글자를 되돌려 놓으므로 다음 틱에 한 번 더 비운다.
+    setTimeout(() => {
+      if (inputRef.current) inputRef.current.value = "";
+    }, 0);
+    void submit(value);
+  }, [submit]);
 
   const resultPlayers: ResultPlayer[] | undefined = multi
     ? multi.players.map((p) => ({
@@ -392,48 +405,60 @@ export function GameScreen({
           onSelect={setSelected}
         />
 
-        <div className="relative flex justify-center">
-          {toast ? (
-            <div
-              className={cn(
-                "absolute -top-11 z-10 animate-pop-in rounded-full px-3.5 py-1.5 text-sm font-bold shadow-sm",
-                toast.kind === "correct" &&
-                  "bg-[var(--success)]/15 text-[var(--success)]",
-                toast.kind === "wrong" && "bg-destructive/15 text-destructive",
-                (toast.kind === "duplicate" || toast.kind === "warning") &&
-                  "bg-[var(--warning)]/18 text-[var(--warning)]",
-              )}
-              role="status"
-            >
-              {toast.text}
-            </div>
-          ) : null}
-
-          <form
-            className="flex w-full max-w-md gap-2"
-            onSubmit={(e) => {
+        {/*
+          입력 줄은 3칸 그리드다. 맨 오른쪽 칸은 정답/오답 팝업 자리로 늘 비워 둔다 —
+          띄울 때만 자리를 만들면 입력칸이 들썩이고, 위로 띄우면 노선 버튼을 가린다.
+        */}
+        <form
+          className="mx-auto grid w-full max-w-lg grid-cols-[minmax(0,1fr)_auto_4.75rem] items-center gap-2 sm:grid-cols-[minmax(0,1fr)_auto_6.5rem]"
+          onSubmit={(e) => {
+            e.preventDefault();
+            commit();
+          }}
+        >
+          {/*
+            값을 리액트가 들고 있지 않는 이유: 한글 조합 중에 value를 되돌려 쓰면
+            IME가 글자를 다시 밀어 넣어 입력칸이 비워지지 않는다. ref로 읽고 지운다.
+          */}
+          <Input
+            ref={inputRef}
+            defaultValue=""
+            onKeyDown={(e) => {
+              // 조합 중(마지막 글자가 아직 완성 전)인 Enter는 브라우저가 폼 제출로
+              // 넘기지 않는다. 한글로 치면 늘 그 상태라 직접 처리해야 한다.
+              if (e.key !== "Enter") return;
               e.preventDefault();
-              const value = draft;
-              setDraft("");
-              void submit(value);
+              commit();
             }}
-          >
-            <Input
-              ref={inputRef}
-              value={draft}
-              onChange={(e) => setDraft(e.target.value)}
-              disabled={!playing}
-              autoComplete="off"
-              autoCapitalize="off"
-              spellCheck={false}
-              placeholder={selected ? `${selected}의 역명` : "노선을 먼저 선택하세요"}
-              aria-label="역명 입력"
-            />
-            <Button type="submit" disabled={!playing} className="px-5">
-              제출
-            </Button>
-          </form>
-        </div>
+            disabled={!playing}
+            autoComplete="off"
+            autoCapitalize="off"
+            spellCheck={false}
+            placeholder={selected ? `${selected}의 역명` : "노선을 먼저 선택하세요"}
+            aria-label="역명 입력"
+          />
+          <Button type="submit" disabled={!playing} className="px-5">
+            제출
+          </Button>
+
+          <div aria-live="polite" className="min-w-0">
+            {toast ? (
+              <span
+                className={cn(
+                  "block animate-pop-in truncate rounded-full px-2 py-1 text-center",
+                  "text-[12px] font-bold sm:text-[13px]",
+                  toast.kind === "correct" &&
+                    "bg-[var(--success)]/15 text-[var(--success)]",
+                  toast.kind === "wrong" && "bg-destructive/15 text-destructive",
+                  (toast.kind === "duplicate" || toast.kind === "warning") &&
+                    "bg-[var(--warning)]/18 text-[var(--warning)]",
+                )}
+              >
+                {toast.text}
+              </span>
+            ) : null}
+          </div>
+        </form>
       </main>
 
       {/* ── 호선별 진행도 ────────────────────────────────────────────────── */}

@@ -1,5 +1,7 @@
 "use client";
 
+import { memo } from "react";
+
 import type { LineMeta } from "@/lib/data/generated";
 import { LineSymbol } from "@/components/LineSymbol";
 import { cn } from "@/lib/utils";
@@ -7,8 +9,9 @@ import { cn } from "@/lib/utils";
 /**
  * 호선별로 몇 개 맞혔는지. 기존 버전의 우측 레일을 그대로 옮기되
  * 숫자만 있던 자리에 얇은 진행 막대를 깔아 한눈에 읽히게 했다.
+ * (LineCircles와 같은 이유로 memo — 매초 다시 그릴 내용이 아니다.)
  */
-export function LineProgress({
+export const LineProgress = memo(function LineProgress({
   lines,
   solvedByLine,
   className,
@@ -53,4 +56,4 @@ export function LineProgress({
       })}
     </ul>
   );
-}
+});

@@ -111,6 +111,11 @@ declare
 begin
   delete from public.rooms where created_at < now() - interval '6 hours';
 
+  -- 한 사람은 한 방에만 있는다. 이전에 만들었거나 참가해 있던 방에서 먼저 빠져나온다.
+  -- (players.id가 primary key라, 정리하지 않으면 아래 insert가 중복 키로 죽는다.)
+  delete from public.rooms   where host_id = p_host_id;
+  delete from public.players where id = p_host_id;
+
   insert into public.rooms (code, host_id, region, lines, duration_min, show_marks)
   values (p_code, p_host_id, p_region, p_lines, p_duration_min, p_show_marks)
   returning * into v_room;

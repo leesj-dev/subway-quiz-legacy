@@ -41,11 +41,12 @@ export async function createMapEngine(
   const { default: svgPanZoom } = await import("svg-pan-zoom");
 
   const doc = svg.ownerDocument;
-  const enabled = new Set(enabledLines);
 
   svg.setAttribute("width", "100%");
   svg.setAttribute("height", "100%");
   svg.style.maxWidth = "100%";
+
+  const enabled = new Set(enabledLines);
 
   const stations = Array.from(
     doc.getElementsByClassName("station"),
@@ -190,6 +191,83 @@ export async function createMapEngine(
   });
   pz = panZoom;
 
+  const refit = () => {
+    // 사용자가 확대해 둔 상태라면 건드리지 않는다. 모바일에서 주소창이 접혔다 펴질 때마다
+    // 보고 있던 자리로 되돌려 놓으면 게임을 할 수가 없다.
+    //
+    // 반드시 resize() 전에 읽어야 한다 — resize()가 기준 배율을 새로 잡아서
+    // 그 뒤에 읽으면 손대지 않은 지도도 '확대해 둔 상태'로 보인다.
+    //
+    // 크기 0으로 초기화된 직후에는 배율이 0/NaN이다. 그때도 다시 맞춰야 한다.
+    const zoom = panZoom.getZoom();
+    const untouched =
+      !Number.isFinite(zoom) || zoom <= 0 || Math.abs(zoom - 1) < 0.01;
+    panZoom.resize();
+    if (untouched) {
+      panZoom.fit();
+      panZoom.center();
+    }
+  };
+
+  /*
+    <object> 안쪽 문서는 바깥 레이아웃보다 한 박자 늦게 잡힌다. 크기가 0인 상태로
+    초기화되면 svg-pan-zoom이 배율을 0으로 계산해 노선도가 통째로 사라진다.
+    타이머로 기다리는 방식은 백그라운드 탭에서 스로틀링에 걸리므로,
+    크기가 잡히는 순간을 ResizeObserver로 받아 그때 다시 맞춘다.
+  */
+  const view = doc.defaultView ?? window;
+  const sizeObserver = new view.ResizeObserver(refit);
+  sizeObserver.observe(svg);
+
+  // svg-pan-zoom은 한 손가락 패닝과 더블탭까지만 처리한다. 두 손가락 확대는 직접 붙인다.
+  svg.style.touchAction = "none";
+
+  const spread = (touches: TouchList) =>
+    Math.hypot(
+      touches[0].clientX - touches[1].clientX,
+      touches[0].clientY - touches[1].clientY,
+    );
+
+  /** 화면 좌표 → svg 뷰포트 좌표. 확대 중심을 손가락 사이에 두려면 필요하다. */
+  const toSvgPoint = (clientX: number, clientY: number) => {
+    const ctm = svg.getScreenCTM();
+    const point = svg.createSVGPoint();
+    point.x = clientX;
+    point.y = clientY;
+    return ctm ? point.matrixTransform(ctm.inverse()) : point;
+  };
+
+  let pinchStart = 0;
+  let pinchZoom = 1;
+
+  const onTouchStart = (e: TouchEvent) => {
+    if (e.touches.length !== 2) return;
+    pinchStart = spread(e.touches);
+    pinchZoom = panZoom.getZoom();
+    panZoom.disablePan(); // 두 손가락 중 하나로 패닝하려 들어 화면이 튄다
+  };
+
+  const onTouchMove = (e: TouchEvent) => {
+    if (e.touches.length !== 2 || !pinchStart) return;
+    e.preventDefault();
+    const center = toSvgPoint(
+      (e.touches[0].clientX + e.touches[1].clientX) / 2,
+      (e.touches[0].clientY + e.touches[1].clientY) / 2,
+    );
+    panZoom.zoomAtPoint(pinchZoom * (spread(e.touches) / pinchStart), center);
+  };
+
+  const onTouchEnd = (e: TouchEvent) => {
+    if (e.touches.length >= 2 || !pinchStart) return;
+    pinchStart = 0;
+    panZoom.enablePan();
+  };
+
+  doc.addEventListener("touchstart", onTouchStart, { passive: true });
+  doc.addEventListener("touchmove", onTouchMove, { passive: false });
+  doc.addEventListener("touchend", onTouchEnd);
+  doc.addEventListener("touchcancel", onTouchEnd);
+
   /** 선택한 호선이 화면을 꽉 채우도록 이동 + 확대. */
   const focusLine = (lineId: string) => {
     const node = doc.getElementsByClassName(`line ${lineId}`)[0] as
@@ -228,6 +306,11 @@ export async function createMapEngine(
 
   return {
     destroy() {
+      sizeObserver.disconnect();
+      doc.removeEventListener("touchstart", onTouchStart);
+      doc.removeEventListener("touchmove", onTouchMove);
+      doc.removeEventListener("touchend", onTouchEnd);
+      doc.removeEventListener("touchcancel", onTouchEnd);
       try {
         panZoom.destroy();
       } catch {
@@ -235,12 +318,9 @@ export async function createMapEngine(
       }
     },
 
-    resize() {
-      panZoom.resize();
-      panZoom.updateBBox();
-      panZoom.fit();
-      panZoom.center();
-    },
+    // updateBBox()는 부르지 않는다 — 캐시된 viewBox를 '그려진 내용의 bbox'로 덮어써서
+    // 원본 viewBox 밖에 삐져나온 요소가 있으면 배율이 어긋난다.
+    resize: refit,
 
     zoomIn: () => panZoom.zoomIn(),
     zoomOut: () => panZoom.zoomOut(),

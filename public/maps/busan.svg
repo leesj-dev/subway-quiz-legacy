@@ -5,10 +5,6 @@
       @font-face { font-family: Pretendard; src: url('../fonts/Pretendard-Bold.subset.woff2'); font-weight: 700; font-style: normal; }
       .station { font-weight: 700; }
     </style></defs>
-
-    <g id="bg_color" shape-rendering="geometricPrecision">
-        <rect fill="#FFFFFF" height="3318.74" width="4081.89" x="1.1" y="1.099" />
-    </g>
     <g id="라인_동해선" shape-rendering="geometricPrecision" class="line 동해선">
         <path d="   M3142.69,479.9l0.024,348.821v88.44v88.311v88.351v75.673c0,14.948-1.851,29.464-5.337,43.331   c-3.052,12.143-7.358,23.787-12.772,34.789c-10.854,22.056-26.16,41.527-44.745,57.239c-27.775,23.48-62.875,38.566-101.385,41.342   c-4.269,0.308-83.832,0.489-83.832,0.489l-87.389-0.011l-150.186-0.018l-150.314-0.018l-149.75-0.018l-150.125-0.018l-161.829-0.02   c-39.139,0-70.867,31.728-69.97,69.782l0.016,51.981l0.051,160.127l0.035,161.707" fill="none" id="전체라인_동해선" stroke="#A3C3E2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
         <g id="역_동해선" shape-rendering="geometricPrecision">

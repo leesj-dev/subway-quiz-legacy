@@ -29,13 +29,23 @@ export function writeHighScore(settings: GameSettings, score: number): number {
 const PLAYER_ID_KEY = "sq:playerId";
 const PLAYER_NAME_KEY = "sq:playerName";
 
-/** 로그인이 없으므로 브라우저마다 uuid 하나로 신원을 대신한다. */
+/**
+ * 로그인이 없으므로 브라우저마다 uuid 하나로 신원을 대신한다.
+ *
+ * 탭이 살아 있는 동안에는 절대 바뀌면 안 된다. useSyncExternalStore가 렌더마다
+ * 이 값을 읽는데, 다른 탭이 localStorage를 건드렸다고 신원이 갈아엎히면
+ * 게임 도중에 방장 자격을 잃는다. 그래서 한 번 읽고 메모리에 붙들어 둔다.
+ */
+let cachedPlayerId: string | null = null;
+
 export function getPlayerId(): string {
+  if (cachedPlayerId) return cachedPlayerId;
   let id = window.localStorage.getItem(PLAYER_ID_KEY);
   if (!id) {
     id = crypto.randomUUID();
     window.localStorage.setItem(PLAYER_ID_KEY, id);
   }
+  cachedPlayerId = id;
   return id;
 }
 

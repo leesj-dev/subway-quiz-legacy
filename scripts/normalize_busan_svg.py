@@ -60,6 +60,13 @@ def main() -> int:
 
     stats = {"line": 0, "mark": 0, "transfer": 0, "fill": 0, "station": 0}
 
+    # 흰 배경 사각형이 viewBox보다 훨씬 커서(4081×3318 vs 3081×2718) 그려진 내용의
+    # bounding box를 부풀린다. 확대/맞춤 계산이 어긋나므로 없앤다.
+    # 노선도가 앉는 면은 어차피 페이지 쪽에서 칠한다.
+    for bg in [g for g in root if (g.get("id") or "") == "bg_color"]:
+        root.remove(bg)
+        stats["bg_removed"] = True
+
     for group in root.iter(NS + "g"):
         gid = group.get("id") or ""
 

@@ -99,6 +99,9 @@ export async function joinRoom(input: {
 
   const alreadyIn = existing.some((p) => p.id === input.playerId);
   if (!alreadyIn) {
+    // players.id가 primary key다. 다른 방에 남아 있던 기록을 지워야 여기에 들어올 수 있다.
+    await supabase.from("players").delete().eq("id", input.playerId);
+
     const taken = new Set(existing.map((p) => p.color));
     const color = PLAYER_COLORS.find((c) => !taken.has(c)) ?? PLAYER_COLORS[0];
     const { error: joinError } = await supabase.from("players").insert({

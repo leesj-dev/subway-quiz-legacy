@@ -10,7 +10,7 @@ import { useEffect, useRef, useState } from "react";
  */
 export function useCountdown(endsAt: number | null, onEnd?: () => void) {
   const [remaining, setRemaining] = useState(() =>
-    endsAt === null ? 0 : Math.max(0, (endsAt - Date.now()) / 1000),
+    endsAt === null ? 0 : Math.max(0, Math.ceil((endsAt - Date.now()) / 1000)),
   );
   const onEndRef = useRef(onEnd);
   useEffect(() => {
@@ -22,8 +22,10 @@ export function useCountdown(endsAt: number | null, onEnd?: () => void) {
 
     let fired = false;
     const tick = () => {
-      const left = Math.max(0, (endsAt - Date.now()) / 1000);
-      setRemaining(left);
+      // 화면에는 초 단위로만 보이므로 초가 바뀔 때만 상태를 건드린다.
+      // 250ms마다 리렌더하면 노선 버튼·진행도까지 통째로 다시 그려져 클릭이 씹힌다.
+      const left = Math.max(0, Math.ceil((endsAt - Date.now()) / 1000));
+      setRemaining((prev) => (prev === left ? prev : left));
       if (left <= 0 && !fired) {
         fired = true;
         onEndRef.current?.();

@@ -38,14 +38,15 @@ export function Slider({
       onChange={(e) => onValueChange(Number(e.target.value))}
       style={{ "--slider-pct": `${pct}%` } as React.CSSProperties}
       className={cn(
-        "h-5 w-full cursor-pointer appearance-none bg-transparent outline-none",
+        // 트랙 6px + 썸 16px. 높이를 썸에 맞춰야 줄 안에서 세로 중앙에 온다.
+        "block h-4 w-full cursor-pointer appearance-none bg-transparent outline-none",
         // track
         "[&::-webkit-slider-runnable-track]:h-1.5 [&::-webkit-slider-runnable-track]:rounded-full",
         "[&::-webkit-slider-runnable-track]:bg-[linear-gradient(to_right,var(--primary)_0,var(--primary)_var(--slider-pct),var(--input)_var(--slider-pct),var(--input)_100%)]",
         "[&::-moz-range-track]:h-1.5 [&::-moz-range-track]:rounded-full [&::-moz-range-track]:bg-input",
         "[&::-moz-range-progress]:h-1.5 [&::-moz-range-progress]:rounded-full [&::-moz-range-progress]:bg-primary",
-        // thumb
-        "[&::-webkit-slider-thumb]:-mt-[7px] [&::-webkit-slider-thumb]:size-4 [&::-webkit-slider-thumb]:appearance-none",
+        // thumb — 트랙(6px) 한가운데 오도록 (6 - 16) / 2 = -5px 만큼 끌어올린다
+        "[&::-webkit-slider-thumb]:-mt-[5px] [&::-webkit-slider-thumb]:size-4 [&::-webkit-slider-thumb]:appearance-none",
         "[&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-primary",
         "[&::-webkit-slider-thumb]:bg-card [&::-webkit-slider-thumb]:shadow-sm",
         "[&::-webkit-slider-thumb]:transition-transform [&:active::-webkit-slider-thumb]:scale-110",
