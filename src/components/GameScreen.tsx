@@ -66,7 +66,9 @@ export function GameScreen({
   );
 
   const [engine, setEngine] = useState<MapEngineHandle | null>(null);
-  const [selected, setSelected] = useState<string | null>(null);
+  // 호선이 하나뿐이면 고를 것도 없다. 미리 골라 두고 해제도 막는다.
+  const onlyLine = playableLines.length === 1 ? playableLines[0].id : null;
+  const [selected, setSelected] = useState<string | null>(onlyLine);
   const [view, setView] = useState<ViewSettings>(DEFAULT_VIEW);
   const [localAnswers, setLocalAnswers] = useState<Answer[]>([]);
   const [toast, setToast] = useState<Toast | null>(null);
@@ -268,6 +270,8 @@ export function GameScreen({
     setTimeout(() => {
       if (inputRef.current) inputRef.current.value = "";
     }, 0);
+    // 계속 이어서 치는 게 기본이다. 모바일에서 키보드가 내려가면 매번 다시 눌러야 한다.
+    input.focus();
     void submit(value);
   }, [submit]);
 
@@ -288,6 +292,11 @@ export function GameScreen({
   const clock = formatClock(remaining);
   const urgent = !ended && remaining <= 30;
 
+  const handleSelectLine = useCallback(
+    (line: string | null) => setSelected(line ?? onlyLine),
+    [onlyLine],
+  );
+
   const scoreBlock = (
     <div className="flex items-baseline gap-1">
       <span className="tnum text-2xl leading-none font-bold lg:text-3xl">{solved}</span>
@@ -295,40 +304,69 @@ export function GameScreen({
     </div>
   );
 
-  const opponents = multi?.players.filter((p) => p.id !== multi.me.id) ?? [];
+  const opponents = (multi?.players ?? [])
+    .filter((p) => p.id !== multi?.me.id)
+    .map((p) => ({
+      ...p,
+      // 땅따먹기 점수는 차지한 역 수, 대결은 상대가 올려 주는 값.
+      points: isTerritory
+        ? (multi?.claims.filter((c) => c.player_id === p.id).length ?? 0)
+        : p.score,
+    }));
 
   return (
     <div className="flex h-[100svh] flex-col gap-2 overflow-hidden p-2 lg:flex-row lg:gap-3 lg:p-3">
       {/* ── 왼쪽 패널 (모바일에서는 상단 바) ───────────────────────────── */}
       <aside className="flex shrink-0 items-center gap-2 lg:w-[286px] lg:flex-col lg:items-stretch lg:gap-3 lg:overflow-y-auto lg:pr-0.5 lg:scrollbar-thin">
-        <Card className="flex items-center gap-3 p-2.5 lg:flex-col lg:items-stretch lg:gap-2 lg:p-4">
-          <div className="hidden items-center justify-between lg:flex">
-            <h1 className="text-sm font-bold tracking-tight">
-              {region.label} 도시철도 QUIZ
-            </h1>
-            {multi ? (
-              <Badge variant="secondary">{MULTI_MODE_INFO[multi.mode].label}</Badge>
-            ) : null}
+        <Card className="min-w-0 flex-1 p-2.5 lg:flex-none lg:p-4">
+          <div className="flex items-center gap-3 lg:flex-col lg:items-stretch lg:gap-2">
+            <div className="hidden items-center justify-between lg:flex">
+              <h1 className="text-sm font-bold tracking-tight">
+                {region.label} 도시철도 QUIZ
+              </h1>
+              {multi ? (
+                <Badge variant="secondary">{MULTI_MODE_INFO[multi.mode].label}</Badge>
+              ) : null}
+            </div>
+
+            <div
+              className={cn(
+                "tnum text-3xl leading-none font-bold tracking-tight tabular-nums lg:text-center lg:text-[3.25rem]",
+                urgent && "text-destructive",
+              )}
+            >
+              {clock}
+            </div>
+
+            <div className="ml-auto flex items-center gap-3 lg:ml-0 lg:justify-center">
+              <span className="hidden text-[11px] font-bold tracking-[0.14em] text-muted-foreground uppercase lg:inline">
+                Score
+              </span>
+              {scoreBlock}
+            </div>
           </div>
 
-          <div
-            className={cn(
-              "tnum text-3xl leading-none font-bold tracking-tight tabular-nums lg:text-center lg:text-[3.25rem]",
-              urgent && "text-destructive",
-            )}
-          >
-            {clock}
-          </div>
-
-          <div className="ml-auto flex items-center gap-3 lg:ml-0 lg:justify-center">
-            <span className="hidden text-[11px] font-bold tracking-[0.14em] text-muted-foreground uppercase lg:inline">
-              Score
-            </span>
-            {scoreBlock}
-          </div>
+          {/* 상대 점수 — 모바일에서는 같은 카드 아랫줄에 붙인다. */}
+          {opponents.length > 0 ? (
+            <ul className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-0.5 border-t pt-1.5 lg:hidden">
+              {opponents.map((p) => (
+                <li key={p.id} className="flex min-w-0 items-center gap-1.5">
+                  <span
+                    className="size-2 shrink-0 rounded-full"
+                    style={{ backgroundColor: p.color }}
+                  />
+                  <span className="min-w-0 max-w-20 truncate text-[11px] text-muted-foreground">
+                    {p.name}
+                  </span>
+                  <span className="tnum text-[13px] leading-none font-bold">
+                    {p.points}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </Card>
 
-        {/* 상대 점수 */}
         {opponents.length > 0 ? (
           <Card className="hidden p-3 lg:block">
             <p className="mb-2 text-[11px] font-bold tracking-[0.14em] text-muted-foreground uppercase">
@@ -342,11 +380,7 @@ export function GameScreen({
                     style={{ backgroundColor: p.color }}
                   />
                   <span className="min-w-0 flex-1 truncate font-bold">{p.name}</span>
-                  <span className="tnum font-bold">
-                    {isTerritory
-                      ? multi!.claims.filter((c) => c.player_id === p.id).length
-                      : p.score}
-                  </span>
+                  <span className="tnum font-bold">{p.points}</span>
                 </li>
               ))}
             </ul>
@@ -402,7 +436,7 @@ export function GameScreen({
           lines={playableLines}
           selected={selected}
           disabled={!playing}
-          onSelect={setSelected}
+          onSelect={handleSelectLine}
         />
 
         {/*
@@ -437,7 +471,16 @@ export function GameScreen({
             placeholder={selected ? `${selected}의 역명` : "노선을 먼저 선택하세요"}
             aria-label="역명 입력"
           />
-          <Button type="submit" disabled={!playing} className="px-5">
+          {/*
+            pointerdown을 막아 포커스가 입력칸에 그대로 남게 한다.
+            버튼으로 포커스가 옮겨가면 모바일 키보드가 내려갔다 올라오길 반복한다.
+          */}
+          <Button
+            type="submit"
+            disabled={!playing}
+            className="px-5"
+            onPointerDown={(e) => e.preventDefault()}
+          >
             제출
           </Button>
 

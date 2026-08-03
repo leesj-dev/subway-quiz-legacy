@@ -41,10 +41,42 @@ export async function createMapEngine(
   const { default: svgPanZoom } = await import("svg-pan-zoom");
 
   const doc = svg.ownerDocument;
+  const view = doc.defaultView ?? window;
 
   svg.setAttribute("width", "100%");
   svg.setAttribute("height", "100%");
   svg.style.maxWidth = "100%";
+
+  /*
+    <object> 안쪽 문서는 바깥 레이아웃보다 한 박자 늦게 자리를 잡는다.
+    크기가 0인 상태로 svg-pan-zoom을 만들면 변환 행렬이 통째로 0이 되는데,
+    fit()·reset()은 전부 '현재 행렬에 곱하는' 방식이라 0에서는 무엇을 곱해도 0이다.
+    나중에 되돌릴 방법이 없으므로, 적당히 타협하지 않고 크기가 잡힐 때까지 기다린다.
+
+    탭이 백그라운드에 있으면 레이아웃 자체가 일어나지 않아 영영 안 잡힐 수 있다.
+    그래도 문제되지 않는다 — 보이지 않는 노선도로는 어차피 게임을 할 수 없고,
+    돌아오는 순간 크기가 잡히면서 시작된다.
+  */
+  await new Promise<void>((resolve) => {
+    const sized = () => svg.getBoundingClientRect().width > 0;
+    if (sized()) return resolve();
+
+    const finish = () => {
+      observer.disconnect();
+      view.clearInterval(poll);
+      doc.removeEventListener("visibilitychange", check);
+      resolve();
+    };
+    const check = () => {
+      if (sized()) finish();
+    };
+
+    const observer = new view.ResizeObserver(check);
+    observer.observe(svg);
+    // ResizeObserver가 놓치는 경우(문서 간 경계 등)를 위한 보조 확인.
+    const poll = view.setInterval(check, 250);
+    doc.addEventListener("visibilitychange", check);
+  });
 
   const enabled = new Set(enabledLines);
 
@@ -176,48 +208,63 @@ export async function createMapEngine(
     };
   };
 
-  const panZoom = svgPanZoom(svg, {
-    panEnabled: true,
-    zoomEnabled: true,
-    dblClickZoomEnabled: false,
-    mouseWheelZoomEnabled: true,
-    controlIconsEnabled: false,
-    fit: true,
-    center: true,
-    minZoom: 1,
-    maxZoom: 8,
-    zoomScaleSensitivity: 0.25,
-    beforePan: clampPan,
-  });
+  // svg-pan-zoom은 초기화하면서 viewBox 속성을 떼어내 변환 행렬로 옮긴다.
+  // 다시 만들 때 같은 기준을 쓰려면 원본을 들고 있어야 한다.
+  const authoredViewBox = svg.getAttribute("viewBox");
+
+  const startPanZoom = () => {
+    if (authoredViewBox) svg.setAttribute("viewBox", authoredViewBox);
+    return svgPanZoom(svg, {
+      panEnabled: true,
+      zoomEnabled: true,
+      dblClickZoomEnabled: false,
+      mouseWheelZoomEnabled: true,
+      controlIconsEnabled: false,
+      fit: true,
+      center: true,
+      minZoom: 1,
+      maxZoom: 8,
+      zoomScaleSensitivity: 0.25,
+      beforePan: clampPan,
+    });
+  };
+
+  let panZoom = startPanZoom();
   pz = panZoom;
 
   const refit = () => {
+    /*
+      크기가 0인 상태로 초기화되면(백그라운드 탭에서 시작하면 그렇게 된다)
+      변환 행렬이 통째로 0이 된다. fit()·reset()은 전부 '현재 행렬에 곱하는' 방식이라
+      0에서는 무엇을 곱해도 0이다 — 되살릴 길이 없으니 인스턴스를 새로 만든다.
+      새로 만들 때는 행렬을 절대값으로 세팅하므로 정상 복구된다.
+    */
+    if (!Number.isFinite(panZoom.getSizes().realZoom) || !panZoom.getSizes().realZoom) {
+      try {
+        panZoom.destroy();
+      } catch {
+        /* 이미 망가진 인스턴스라 정리 중 실패해도 무시한다 */
+      }
+      panZoom = startPanZoom();
+      pz = panZoom;
+      if (selected && zoomOnSelect) focusLine(selected);
+      return;
+    }
+
     // 사용자가 확대해 둔 상태라면 건드리지 않는다. 모바일에서 주소창이 접혔다 펴질 때마다
     // 보고 있던 자리로 되돌려 놓으면 게임을 할 수가 없다.
     //
     // 반드시 resize() 전에 읽어야 한다 — resize()가 기준 배율을 새로 잡아서
     // 그 뒤에 읽으면 손대지 않은 지도도 '확대해 둔 상태'로 보인다.
-    //
-    // 크기 0으로 초기화된 직후에는 배율이 0/NaN이다. 그때도 다시 맞춰야 한다.
-    const zoom = panZoom.getZoom();
-    const untouched =
-      !Number.isFinite(zoom) || zoom <= 0 || Math.abs(zoom - 1) < 0.01;
+    const untouched = Math.abs(panZoom.getZoom() - 1) < 0.01;
     panZoom.resize();
     if (untouched) {
       panZoom.fit();
       panZoom.center();
+      // 크기가 이제야 잡힌 경우라면, 미리 골라 둔 호선 확대도 여기서 처음 적용된다.
+      if (selected && zoomOnSelect) focusLine(selected);
     }
   };
-
-  /*
-    <object> 안쪽 문서는 바깥 레이아웃보다 한 박자 늦게 잡힌다. 크기가 0인 상태로
-    초기화되면 svg-pan-zoom이 배율을 0으로 계산해 노선도가 통째로 사라진다.
-    타이머로 기다리는 방식은 백그라운드 탭에서 스로틀링에 걸리므로,
-    크기가 잡히는 순간을 ResizeObserver로 받아 그때 다시 맞춘다.
-  */
-  const view = doc.defaultView ?? window;
-  const sizeObserver = new view.ResizeObserver(refit);
-  sizeObserver.observe(svg);
 
   // svg-pan-zoom은 한 손가락 패닝과 더블탭까지만 처리한다. 두 손가락 확대는 직접 붙인다.
   svg.style.touchAction = "none";
@@ -283,10 +330,14 @@ export async function createMapEngine(
     }
     if (!bbox.width || !bbox.height) return;
 
+    // 노선도가 아직 화면에 자리를 잡기 전이면 배율이 0이라 계산이 전부 Infinity가 된다.
+    // 크기가 잡히는 순간 refit()이 다시 불러 주므로 여기서는 그냥 물러난다.
+    const { width, height, realZoom } = panZoom.getSizes();
+    if (!realZoom || !Number.isFinite(realZoom) || !width || !height) return;
+
     // clampPan이 중간 상태를 막아버리므로 잠시 풀어둔다.
     // (라이브러리는 null을 받아 해제하지만 타입 선언에 빠져 있다.)
     panZoom.setBeforePan(null as unknown as typeof clampPan);
-    const { width, height, realZoom } = panZoom.getSizes();
     panZoom.pan({
       x: -realZoom * (bbox.x - width / (realZoom * 2) + bbox.width / 2),
       y: -realZoom * (bbox.y - height / (realZoom * 2) + bbox.height / 2),
@@ -301,6 +352,11 @@ export async function createMapEngine(
     );
     panZoom.setBeforePan(clampPan);
   };
+
+  // 창 크기나 패널이 바뀌면 노선도를 다시 맞춘다.
+  // (refit이 focusLine을 부르므로 반드시 그 뒤에 등록한다.)
+  const sizeObserver = new view.ResizeObserver(refit);
+  sizeObserver.observe(svg);
 
   applyLines();
 
