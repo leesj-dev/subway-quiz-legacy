@@ -1,3 +1,7 @@
+> ⚠️ **이 저장소는 더 이상 관리되지 않습니다.** 새 저장소로 이전되었습니다: **[leesj-dev/subway-quiz](https://github.com/leesj-dev/subway-quiz)**
+>
+> 이 저장소(`subway-quiz-legacy`)는 과거 기록 보존을 위해서만 남겨둡니다.
+
 # 지하철 노선도 퀴즈
 
 수도권 및 부산 지하철 노선도를 보고 역 이름과 그 역이 속한 호선을 맞히는 퀴즈.
